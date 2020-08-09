@@ -2,16 +2,24 @@
   "date_added": "",
   "device": {
     "name": "",
-    "identifier": ""
+    "identifier": "",
+    "descriptor": "",
+    "type": "bouy"
   },
   "version": 0.1,
   "telemetry": {
     "date_proc": "5/5/2020",
-    "location": {
+    "datapoint": {
       "EEZ": "Philippines Exclusive Economic Zone",
       "FMZ": "Region X",
+      "FMA": 9,
       "lat": 21.11,
       "lng": 22.0
+    },
+    "ais": {
+      "vesselType": "fishing"
     }
   }
 }
+
+// http://v2.geoportal.gov.ph/tiles/v2/PGP/{z}/{x}/{y}.png
