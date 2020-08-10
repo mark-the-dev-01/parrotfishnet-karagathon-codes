@@ -2,11 +2,6 @@ import React, { Component } from "react";
 import "./MapComponent.css";
 import { GoogleMap, LoadScript } from "@react-google-maps/api";
 
-const containerStyle = {
-  width: "400px",
-  height: "400px",
-};
-
 const center = { lat: 8.545379, lng: 124.566067 };
 const APIKEY = "AIzaSyDC2fjGO1xZloKGZnKz6P4NrOkOuS0degc";
 
