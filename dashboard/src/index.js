@@ -22,7 +22,6 @@ import { Router, Route, Switch, Redirect } from "react-router-dom";
 
 // core components
 import Admin from "layouts/Admin.js";
-import RTL from "layouts/RTL.js";
 
 import "assets/css/material-dashboard-react.css?v=1.9.0";
 
@@ -31,9 +30,14 @@ const hist = createBrowserHistory();
 ReactDOM.render(
   <Router history={hist}>
     <Switch>
-      <Route path="/admin" component={Admin} />
-      <Route path="/rtl" component={RTL} />
-      <Redirect from="/" to="/admin/dashboard" />
+      <Route
+        path="/parrotfishnet-karagathon-bucket/dashboard/admin"
+        component={Admin}
+      />
+      <Redirect
+        from="/parrotfishnet-karagathon-bucket/dashboard/"
+        to="/parrotfishnet-karagathon-bucket/dashboard/admin/dashboard"
+      />
     </Switch>
   </Router>,
   document.getElementById("root")

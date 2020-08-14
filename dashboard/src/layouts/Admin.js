@@ -23,7 +23,7 @@ let ps;
 const switchRoutes = (
   <Switch>
     {routes.map((prop, key) => {
-      if (prop.layout === "/admin") {
+      if (prop.layout === "/parrotfishnet-karagathon-bucket/dashboard/admin") {
         return (
           <Route
             path={prop.layout + prop.path}
@@ -34,7 +34,10 @@ const switchRoutes = (
       }
       return null;
     })}
-    <Redirect from="/admin" to="/admin/dashboard" />
+    <Redirect
+      from="/parrotfishnet-karagathon-bucket/dashboard/admin"
+      to="/parrotfishnet-karagathon-bucket/dashboard/admin/dashboard"
+    />
   </Switch>
 );
 
@@ -50,24 +53,27 @@ export default function Admin({ ...rest }) {
   const [color, setColor] = React.useState("blue");
   const [fixedClasses, setFixedClasses] = React.useState("dropdown show");
   const [mobileOpen, setMobileOpen] = React.useState(false);
-  const handleImageClick = (image) => {
-    setImage(image);
-  };
-  const handleColorClick = (color) => {
-    setColor(color);
-  };
-  const handleFixedClick = () => {
-    if (fixedClasses === "dropdown") {
-      setFixedClasses("dropdown show");
-    } else {
-      setFixedClasses("dropdown");
-    }
-  };
+  // const handleImageClick = (image) => {
+  //   setImage(image);
+  // };
+  // const handleColorClick = (color) => {
+  //   setColor(color);
+  // };
+  // const handleFixedClick = () => {
+  //   if (fixedClasses === "dropdown") {
+  //     setFixedClasses("dropdown show");
+  //   } else {
+  //     setFixedClasses("dropdown");
+  //   }
+  // };
   const handleDrawerToggle = () => {
     setMobileOpen(!mobileOpen);
   };
   const getRoute = () => {
-    return window.location.pathname !== "/admin/maps";
+    return (
+      window.location.pathname !==
+      "/parrotfishnet-karagathon-bucket/dashboard/admin/maps"
+    );
   };
   const resizeFunction = () => {
     if (window.innerWidth >= 960) {
