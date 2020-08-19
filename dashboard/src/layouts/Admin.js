@@ -53,12 +53,14 @@ export default function Admin({ ...rest }) {
   const [color, setColor] = React.useState("blue");
   const [fixedClasses, setFixedClasses] = React.useState("dropdown show");
   const [mobileOpen, setMobileOpen] = React.useState(false);
-  // const handleImageClick = (image) => {
-  //   setImage(image);
-  // };
-  // const handleColorClick = (color) => {
-  //   setColor(color);
-  // };
+  const [deviceData, setdeviceData] = React.useState([]);
+
+  const handleImageClick = (image) => {
+    setImage(image);
+  };
+  const handleColorClick = (color) => {
+    setColor(color);
+  };
   // const handleFixedClick = () => {
   //   if (fixedClasses === "dropdown") {
   //     setFixedClasses("dropdown show");
@@ -80,6 +82,9 @@ export default function Admin({ ...rest }) {
       setMobileOpen(false);
     }
   };
+  const handleDeviceData = (data) => {
+    setdeviceData(data);
+  };
   // initialize and destroy the PerfectScrollbar plugin
   React.useEffect(() => {
     if (navigator.platform.indexOf("Win") > -1) {
@@ -98,6 +103,7 @@ export default function Admin({ ...rest }) {
       window.removeEventListener("resize", resizeFunction);
     };
   }, [mainPanel]);
+
   return (
     <div className={classes.wrapper}>
       <Sidebar

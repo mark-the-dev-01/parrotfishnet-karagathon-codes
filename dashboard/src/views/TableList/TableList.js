@@ -1,4 +1,4 @@
-import React from "react";
+import React, { Component } from "react";
 // @material-ui/core components
 import { makeStyles } from "@material-ui/core/styles";
 // core components
@@ -16,11 +16,11 @@ const styles = {
       margin: "0",
       fontSize: "14px",
       marginTop: "0",
-      marginBottom: "0"
+      marginBottom: "0",
     },
     "& a,& a:hover,& a:focus": {
-      color: "#FFFFFF"
-    }
+      color: "#FFFFFF",
+    },
   },
   cardTitleWhite: {
     color: "#FFFFFF",
@@ -34,79 +34,97 @@ const styles = {
       color: "#777",
       fontSize: "65%",
       fontWeight: "400",
-      lineHeight: "1"
-    }
-  }
+      lineHeight: "1",
+    },
+  },
 };
 
-const useStyles = makeStyles(styles);
+export default class TableList extends Component {
+  state = {
+    classes: makeStyles(styles),
+    deviceData: [],
+    groupedData: [],
+    tableData: {
+      Triggers: {
+        title: "Triggers",
+        subTitle: "List of times each device was triggered.",
+        tableHeader: ["Date Triggered", "Device", "FMA", "FMZ"],
+      },
+    },
+  };
 
-export default function TableList() {
-  const classes = useStyles();
-  return (
-    <GridContainer>
-      <GridItem xs={12} sm={12} md={12}>
-        <Card>
-          <CardHeader color="primary">
-            <h4 className={classes.cardTitleWhite}>Simple Table</h4>
-            <p className={classes.cardCategoryWhite}>
-              Here is a subtitle for this table
-            </p>
-          </CardHeader>
-          <CardBody>
-            <Table
-              tableHeaderColor="primary"
-              tableHead={["Name", "Country", "City", "Salary"]}
-              tableData={[
-                ["Dakota Rice", "Niger", "Oud-Turnhout", "$36,738"],
-                ["Minerva Hooper", "Curaçao", "Sinaai-Waas", "$23,789"],
-                ["Sage Rodriguez", "Netherlands", "Baileux", "$56,142"],
-                ["Philip Chaney", "Korea, South", "Overland Park", "$38,735"],
-                ["Doris Greene", "Malawi", "Feldkirchen in Kärnten", "$63,542"],
-                ["Mason Porter", "Chile", "Gloucester", "$78,615"]
-              ]}
-            />
-          </CardBody>
-        </Card>
-      </GridItem>
-      <GridItem xs={12} sm={12} md={12}>
-        <Card plain>
-          <CardHeader plain color="primary">
-            <h4 className={classes.cardTitleWhite}>
-              Table on Plain Background
-            </h4>
-            <p className={classes.cardCategoryWhite}>
-              Here is a subtitle for this table
-            </p>
-          </CardHeader>
-          <CardBody>
-            <Table
-              tableHeaderColor="primary"
-              tableHead={["ID", "Name", "Country", "City", "Salary"]}
-              tableData={[
-                ["1", "Dakota Rice", "$36,738", "Niger", "Oud-Turnhout"],
-                ["2", "Minerva Hooper", "$23,789", "Curaçao", "Sinaai-Waas"],
-                ["3", "Sage Rodriguez", "$56,142", "Netherlands", "Baileux"],
-                [
-                  "4",
-                  "Philip Chaney",
-                  "$38,735",
-                  "Korea, South",
-                  "Overland Park"
-                ],
-                [
-                  "5",
-                  "Doris Greene",
-                  "$63,542",
-                  "Malawi",
-                  "Feldkirchen in Kärnten"
-                ],
-                ["6", "Mason Porter", "$78,615", "Chile", "Gloucester"]
-              ]}
-            />
-          </CardBody>
-        </Card>
-      </GridItem>
-    </GridContainer>
-  );
+  constructor(props) {
+    super(props);
+
+    fetch("http://localhost:5000/alldata")
+      .then((res) => res.json())
+      .then((data) => {
+        this.setState({ deviceData: data });
+      })
+      .catch(console.log);
+    console.log("tableList constructor");
+  }
+
+  groupDeviceData() {
+    ["Triggers"].forEach((element) => {
+      let d = [];
+      switch (element) {
+        default:
+          this.state.deviceData
+            .sort((a, b) => a.telemetry.date_proc - b.telemetry.date_proc)
+            .forEach((dev) => {
+              if (dev.telemetry.state === "triggered") {
+                d.push([
+                  dev.telemetry.date_proc_str,
+                  dev.device.name,
+                  dev.telemetry.datapoint.FMA,
+                  dev.telemetry.datapoint.FMZ,
+                ]);
+              }
+            });
+          break;
+      }
+
+      this.state.groupedData.push({
+        title: this.state.tableData[element].title,
+        subTitle: this.state.tableData[element].subTitle,
+        header: this.state.tableData[element].tableHeader,
+        data: d,
+      });
+    });
+
+    console.log("tableList groupDeviceData " + this.state.groupedData.length);
+  }
+
+  render() {
+    console.log("tableList render ");
+    if (this.state.deviceData.length > 0) {
+      this.groupDeviceData();
+      console.log(this.state.groupedData[0]);
+    }
+
+    return (
+      <GridContainer>
+        <GridItem xs={12} sm={12} md={12}>
+          <Card>
+            <CardHeader color="primary">
+              <h4 className={this.state.classes.cardTitleWhite}>
+                {(this.state.groupedData[0] || { title: "" }).title}
+              </h4>
+              <p className={this.state.classes.cardCategoryWhite}>
+                {(this.state.groupedData[0] || { subTitle: "" }).subTitle}
+              </p>
+            </CardHeader>
+            <CardBody>
+              <Table
+                tableHeaderColor="primary"
+                tableHead={(this.state.groupedData[0] || { header: [] }).header}
+                tableData={(this.state.groupedData[0] || { data: [] }).data}
+              />
+            </CardBody>
+          </Card>
+        </GridItem>
+      </GridContainer>
+    );
+  }
 }

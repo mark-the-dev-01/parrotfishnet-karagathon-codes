@@ -30,22 +30,76 @@ import CardBody from "components/Card/CardBody.js";
 import CardFooter from "components/Card/CardFooter.js";
 
 import { bugs, website, server } from "variables/general.js";
-
 import {
   dailySalesChart,
   emailsSubscriptionChart,
-  completedTasksChart
+  completedTasksChart,
 } from "variables/charts.js";
 
 import styles from "assets/jss/material-dashboard-react/views/dashboardStyle.js";
 
+// import deviceData from "models/deviceDataModel.js";
+let deviceData = [];
+let deviceCount = 0;
+
 const useStyles = makeStyles(styles);
 
-export default function Dashboard() {
+// // React.useEffect(() => {
+// if (deviceData.length == 0) {
+fetch("http://localhost:5000/alldata")
+  .then((res) => res.json())
+  .then((data) => {
+    deviceData = data;
+  })
+  .then(() => {
+    deviceCount = deviceData
+      .map((d) => d.device.name)
+      .filter((value, index, self) => self.indexOf(value) === index).length;
+  })
+  .catch(console.log);
+// }
+// // }, []);
+
+export default function Dashboard(props) {
+  const deviceCard = React.createRef();
+
+  // initialize and destroy the PerfectScrollbar plugin
+  // React.useEffect(() => {
+  //   // if (deviceData.length == 0) {
+  //   fetch("http://localhost:5000/alldata")
+  //     .then((res) => res.json())
+  //     .then((data) => {
+  //       deviceData = data;
+  //     })
+  //     .then(() => {
+  //       deviceCount = deviceData
+  //         .map((d) => d.device.name)
+  //         .filter((value, index, self) => self.indexOf(value) === index).length;
+  //     })
+  //     .catch(console.log);
+  //   // }
+  // }, [deviceCard]);
+
   const classes = useStyles();
   return (
     <div>
       <GridContainer>
+        <GridItem xs={12} sm={6} md={3}>
+          <Card>
+            <CardHeader color="info" stats icon>
+              <CardIcon color="info">
+                <Accessibility />
+              </CardIcon>
+              <p className={classes.cardCategory}>Devices</p>
+              <h3 className={classes.cardTitle}>{deviceCount}</h3>
+            </CardHeader>
+            <CardFooter stats>
+              <div className={classes.stats}>
+                <Update />
+              </div>
+            </CardFooter>
+          </Card>
+        </GridItem>
         <GridItem xs={12} sm={6} md={3}>
           <Card>
             <CardHeader color="warning" stats icon>
@@ -62,7 +116,7 @@ export default function Dashboard() {
                 <Danger>
                   <Warning />
                 </Danger>
-                <a href="#pablo" onClick={e => e.preventDefault()}>
+                <a href="#pablo" onClick={(e) => e.preventDefault()}>
                   Get more space
                 </a>
               </div>
@@ -103,25 +157,8 @@ export default function Dashboard() {
             </CardFooter>
           </Card>
         </GridItem>
-        <GridItem xs={12} sm={6} md={3}>
-          <Card>
-            <CardHeader color="info" stats icon>
-              <CardIcon color="info">
-                <Accessibility />
-              </CardIcon>
-              <p className={classes.cardCategory}>Followers</p>
-              <h3 className={classes.cardTitle}>+245</h3>
-            </CardHeader>
-            <CardFooter stats>
-              <div className={classes.stats}>
-                <Update />
-                Just Updated
-              </div>
-            </CardFooter>
-          </Card>
-        </GridItem>
       </GridContainer>
-      <GridContainer>
+      {/* <GridContainer>
         <GridItem xs={12} sm={12} md={4}>
           <Card chart>
             <CardHeader color="success">
@@ -194,8 +231,8 @@ export default function Dashboard() {
             </CardFooter>
           </Card>
         </GridItem>
-      </GridContainer>
-      <GridContainer>
+      </GridContainer> */}
+      {/* <GridContainer>
         <GridItem xs={12} sm={12} md={6}>
           <CustomTabs
             title="Tasks:"
@@ -259,7 +296,7 @@ export default function Dashboard() {
             </CardBody>
           </Card>
         </GridItem>
-      </GridContainer>
+      </GridContainer> */}
     </div>
   );
 }
