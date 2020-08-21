@@ -1,6 +1,8 @@
 let deviceData = [];
 
-fetch("http://localhost:5000/alldata")
+fetch(
+  "https://20200820t223325-dot-marine-protected-areas-v279620.et.r.appspot.com/dashboard/api/alldata"
+)
   .then((res) => res.json())
   .then((data) => {
     // this.setState({ devices: data });

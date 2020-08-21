@@ -2,6 +2,8 @@
 
 # dependencies
 /dashboard/node_modules
+/api/__pycache__/
+/env/
 /.pnp
 .pnp.js
 /.vscode
@@ -22,3 +24,4 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+dataset/marine-protected-areas-v279620-4445a8039f33.json

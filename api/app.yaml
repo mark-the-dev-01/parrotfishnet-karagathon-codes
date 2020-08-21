@@ -1,6 +1,6 @@
-runtime: python38
-api_version: 1.2
+runtime: python37
 
 handlers:
 - url: /.*
-  script: app.app
+  script: auto
+
