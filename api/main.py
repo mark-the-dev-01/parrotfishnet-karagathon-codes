@@ -44,7 +44,7 @@ def all_data():
         status=200,
         mimetype='application/json'
     )
-    # response.headers['Access-Control-Allow-Origin'] = '*'
+    response.headers['Access-Control-Allow-Origin'] = '*'
     return response
 
 
@@ -66,7 +66,7 @@ def get_device_data(devicename):
         status=200,
         mimetype='application/json'
     )
-    # response.headers['Access-Control-Allow-Origin'] = '*'
+    response.headers['Access-Control-Allow-Origin'] = '*'
     return response
 
 

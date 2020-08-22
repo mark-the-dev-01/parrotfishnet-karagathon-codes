@@ -15,8 +15,6 @@ export default class MarkerList extends Component {
     return this.props.markers.map(({ key, ...props }) => (
       <PopupMarker key={key} {...props}></PopupMarker>
     ));
-
-    // return <Fragment>{items}</Fragment>;
   }
 }
 // inspired by https://github.com/PaulLeCam/react-leaflet/blob/master/example/components/custom-component.js

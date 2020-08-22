@@ -48,7 +48,7 @@ export default class TableList extends Component {
       Triggers: {
         title: "Triggers",
         subTitle: "List of times each device was triggered.",
-        tableHeader: ["Date Triggered", "Device", "FMA", "FMZ"],
+        tableHeader: ["Time Triggered", "Device", "FMA", "FMZ"],
       },
     },
   };
@@ -57,14 +57,13 @@ export default class TableList extends Component {
     super(props);
 
     fetch(
-      "https://20200820t223325-dot-marine-protected-areas-v279620.et.r.appspot.com/dashboard/api/alldata"
+      "https://marine-protected-areas-v279620.et.r.appspot.com/dashboard/api/alldata"
     )
       .then((res) => res.json())
       .then((data) => {
         this.setState({ deviceData: data });
       })
       .catch(console.log);
-    console.log("tableList constructor");
   }
 
   groupDeviceData() {
@@ -94,15 +93,12 @@ export default class TableList extends Component {
         data: d,
       });
     });
-
-    console.log("tableList groupDeviceData " + this.state.groupedData.length);
   }
 
   render() {
     console.log("tableList render ");
     if (this.state.deviceData.length > 0) {
       this.groupDeviceData();
-      console.log(this.state.groupedData[0]);
     }
 
     return (
