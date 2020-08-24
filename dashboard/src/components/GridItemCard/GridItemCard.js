@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 
-import Accessibility from "@material-ui/icons/Accessibility";
 import Update from "@material-ui/icons/Update";
 
 import GridItem from "components/Grid/GridItem.js";
@@ -15,7 +14,6 @@ export default class GridItemCard extends Component {
   }
 
   render() {
-    console.log(this.props.cardValue);
     return (
       <GridItem
         xs={this.props.cardValue.gridItemSizes.xs}

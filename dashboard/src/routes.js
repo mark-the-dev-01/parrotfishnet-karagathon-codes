@@ -56,7 +56,7 @@ const dashboardRoutes = [
   // },
   {
     path: "/table",
-    name: "Table List",
+    name: "Fisherman Location Tracking",
     //    rtlName: "قائمة الجدول",
     icon: "content_paste",
     component: TableList,

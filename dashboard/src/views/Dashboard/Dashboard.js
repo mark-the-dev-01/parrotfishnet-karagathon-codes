@@ -3,6 +3,9 @@ import React, { Component } from "react";
 import ChartistGraph from "react-chartist";
 import PropTypes from "prop-types";
 
+// lodash
+import _ from "lodash";
+
 // @material-ui/core
 // import { makeStyles } from "@material-ui/core/styles";
 import { withStyles } from "@material-ui/core/styles";
@@ -20,6 +23,8 @@ import Accessibility from "@material-ui/icons/Accessibility";
 import BugReport from "@material-ui/icons/BugReport";
 import Code from "@material-ui/icons/Code";
 import Cloud from "@material-ui/icons/Cloud";
+import DirectionsBoat from "@material-ui/icons/DirectionsBoat";
+import Room from "@material-ui/icons/Room";
 // core components
 import GridItem from "components/Grid/GridItem.js";
 import GridContainer from "components/Grid/GridContainer.js";
@@ -76,10 +81,35 @@ class Dashboard extends Component {
         this.setState({ deviceData: data });
       })
       .then(() => {
-        this.getDeviceCount();
+        this.getVesselCount();
         this.getTriggeredCount();
+        this.getTriggerByVessel();
       })
       .catch(console.log);
+  }
+
+  getTriggerByVessel() {
+    const triggerData = _.filter(
+      this.state.deviceData,
+      (d) => d.telemetry.state === "triggered"
+    );
+    const vessels = _.uniqBy(triggerData, "device.identifier");
+    const groupedByDevice = _.groupBy(triggerData, "device.identifier");
+
+    // this.setState({
+    //   triggerPerVessel: {
+    //     title: "Location Check",
+    //     cardInfoColor: "success",
+    //     value: triggerCount,
+    //     cardIconContent: <Room />,
+    //     gridItemSizes: {
+    //       xs: 12,
+    //       sm: 3,
+    //       md: 4,
+    //     },
+    //     footerTitle: footerTitle,
+    //   },
+    // });
   }
 
   getTriggeredCount() {
@@ -92,72 +122,53 @@ class Dashboard extends Component {
     )[0];
 
     const footerTitle =
-      "Last trigger " +
+      "Last tracked " +
       lastEntry.telemetry.date_proc_str +
       " from " +
       lastEntry.device.name;
 
     this.setState({
       triggerCount: {
-        title: "Trigger Counts",
+        title: "Fisherman tracked (xx) times",
         cardInfoColor: "danger",
         value: triggerCount,
-        cardIconContent: <Icon>info_outline</Icon>,
+        cardIconContent: <Room />,
         gridItemSizes: {
           xs: 12,
           sm: 3,
-          md: 6,
+          md: 4,
         },
         footerTitle: footerTitle,
       },
     });
-
-    console.log("triggerCount", this.state.triggerCount);
   }
 
-  getDeviceCount() {
+  getVesselCount() {
     const devCount = this.state.deviceData
       .map((d) => d.device.identifier)
       .filter((value, index, self) => self.indexOf(value) === index).length;
 
     const footerTitle =
-      "Recently triggered " +
+      "Recently tracked " +
       this.state.deviceData.sort(
         (a, b) => b.telemetry.date_proc - a.telemetry.date_proc
       )[0].telemetry.date_proc_str;
 
     this.setState({
       deviceCount: {
-        title: "Devices",
+        title: "Vessel Count",
         cardInfoColor: "info",
         value: devCount,
-        cardIconContent: <Accessibility />,
+        cardIconContent: <DirectionsBoat />,
         gridItemSizes: {
           xs: 12,
           sm: 3,
-          md: 6,
+          md: 4,
         },
         footerTitle: footerTitle,
       },
     });
   }
-
-  // initialize and destroy the PerfectScrollbar plugin
-  // React.useEffect(() => {
-  //   // if (deviceData.length == 0) {
-  //   fetch("https://marine-protected-areas-v279620.et.r.appspot.com/dashboard/api/alldata")
-  //     .then((res) => res.json())
-  //     .then((data) => {
-  //       deviceData = data;
-  //     })
-  //     .then(() => {
-  //       deviceCount = deviceData
-  //         .map((d) => d.device.name)
-  //         .filter((value, index, self) => self.indexOf(value) === index).length;
-  //     })
-  //     .catch(console.log);
-  //   // }
-  // }, [deviceCard]);
 
   render() {
     const { classes } = this.props;

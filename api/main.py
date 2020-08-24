@@ -1,11 +1,12 @@
+from collections import OrderedDict
 from google.cloud import firestore
 from flask import Flask
 import json
 from datetime import datetime
-from collections import OrderedDict
+import decimal
+import logging
 
 app = Flask(__name__)
-
 db = firestore.Client()
 entries_ref = db.collection('entries')
 results = []
@@ -16,11 +17,21 @@ def root():
     return "Hello from the server side"
 
 
+@app.route("/dashboard/api/alldata/<version>")
 @app.route("/dashboard/api/alldata")
-def all_data():
-    allData = []
+def all_data(version=0.5):
+    global results
+    updateResults = False
+
     if (len(results) == 0):
-        query = entries_ref.stream()
+        updateResults = True
+    else:
+        if (results[0]['version'] != version):
+            results = []
+            updateResults = True
+
+    if (updateResults):
+        query = entries_ref.where("version", "==", version).stream()
         for q in query:
             try:
                 res = {}
@@ -31,16 +42,12 @@ def all_data():
                 res['telemetry']['date_proc_str'] = datetime.fromtimestamp(
                     res['telemetry']['date_proc']).strftime("%m/%d/%Y %H:%M:%S")
                 results.append(res)
-                pass
-            except Exception as error:
-                pass
 
-    allData = json.dumps(results)
-    # resp = Flask.make_response(val, 200)
-    # resp.headers['Access-Control-Allow-Origin'] = '*'
+            except Exception as error:
+                logging.exception(error)
 
     response = app.response_class(
-        response=allData,
+        response=json.dumps(results),
         status=200,
         mimetype='application/json'
     )
@@ -57,7 +64,7 @@ def get_device_data(devicename):
                 if (res['device']['name'] == devicename):
                     deviceData.append(res)
             except Exception as error:
-                pass
+                logging.exception(error)
 
     data = json.dumps(deviceData)
 

@@ -1,9 +1,18 @@
-import React, { Component, Fragment } from "react";
+import React, { Component } from "react";
 import { Marker, Popup } from "react-leaflet";
+import logo from "assets/img/noun_Boat_154463.png";
 
-const PopupMarker = ({ content, position }) => (
-  <Marker position={position}>
-    <Popup>{content}</Popup>
+const PopupMarker = ({ content, position, icon }) => (
+  <Marker position={position} icon={icon}>
+    <Popup>
+      <img
+        src={logo}
+        alt="Boat by Fabián Sanabria from the Noun Project"
+        width="25%"
+        className="classes.img"
+      />
+      <div>{content}</div>
+    </Popup>
   </Marker>
 );
 
@@ -11,7 +20,6 @@ export default class MarkerList extends Component {
   state = {};
 
   render() {
-    // const items = this.props.markers.map(({ key, ...props }) => (
     return this.props.markers.map(({ key, ...props }) => (
       <PopupMarker key={key} {...props}></PopupMarker>
     ));

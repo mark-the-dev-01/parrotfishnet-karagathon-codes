@@ -46,9 +46,9 @@ export default class TableList extends Component {
     groupedData: [],
     tableData: {
       Triggers: {
-        title: "Triggers",
-        subTitle: "List of times each device was triggered.",
-        tableHeader: ["Time Triggered", "Device", "FMA", "FMZ"],
+        title: "Fisherman Location Tracked",
+        subTitle: "List of times we have the vessel location.",
+        tableHeader: ["Time Tracked", "Vessel name", "FMA", "FMZ"],
       },
     },
   };
@@ -72,13 +72,13 @@ export default class TableList extends Component {
       switch (element) {
         default:
           this.state.deviceData
-            .sort((a, b) => a.telemetry.date_proc - b.telemetry.date_proc)
+            .sort((a, b) => b.telemetry.date_proc - a.telemetry.date_proc)
             .forEach((dev) => {
               if (dev.telemetry.state === "triggered") {
                 d.push([
                   dev.telemetry.date_proc_str,
                   dev.device.name,
-                  dev.telemetry.datapoint.FMA,
+                  dev.telemetry.datapoint.FMALocation,
                   dev.telemetry.datapoint.FMZ,
                 ]);
               }
@@ -96,7 +96,6 @@ export default class TableList extends Component {
   }
 
   render() {
-    console.log("tableList render ");
     if (this.state.deviceData.length > 0) {
       this.groupDeviceData();
     }

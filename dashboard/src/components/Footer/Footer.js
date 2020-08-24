@@ -56,6 +56,15 @@ export default function Footer(props) {
             </a>
             , made with love for a better web
           </span>
+          ,
+          <span>
+            {" "}
+            Icons from{" "}
+            <a src="https://thenounproject.com/jovenfabuloso/">
+              Fabián Sanabria
+            </a>{" "}
+            of the Noun Project
+          </span>
         </p>
       </div>
     </footer>

@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import "./LeafletMap.css";
 import { Map, TileLayer } from "react-leaflet";
 import MarkerList from "../../components/MarkerList/MarkerList.js";
-import { LayerGroup } from "leaflet";
+import { iconDot } from "components/Icons/Dot/Dot.js";
 
 export default class LeafletMap extends Component {
   state = {
@@ -36,6 +36,8 @@ export default class LeafletMap extends Component {
         device.device.name +
         " was " +
         device.telemetry.state +
+        " at " +
+        device.telemetry.datapoint.FMALocation +
         " " +
         device.telemetry.date_proc_str;
       const date_proc = device.telemetry.date_proc;
@@ -43,6 +45,7 @@ export default class LeafletMap extends Component {
         key: date_proc.toString(),
         content: popupMessage,
         position: [lat, lng],
+        icon: iconDot,
       });
     });
 
