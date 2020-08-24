@@ -1,19 +1,23 @@
-/*! For license information please see main.7d549b13.chunk.js.LICENSE.txt */
+/*! For license information please see main.fafba0a5.chunk.js.LICENSE.txt */
 (this["webpackJsonpmaterial-dashboard-react"] =
   this["webpackJsonpmaterial-dashboard-react"] || []).push([
   [0],
   {
-    106: function (e, a, t) {
+    108: function (e, a, t) {
+      e.exports =
+        "/parrotfishnet-karagathon-bucket/dashboard/static/media/noun_Boat_154463.3dcfe587.png";
+    },
+    110: function (e, a, t) {
       e.exports = t.p + "static/media/sidebar-2.310509c9.jpg";
     },
-    107: function (e, a) {
+    111: function (e, a) {
       e.exports =
         "data:image/png;base64,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";
     },
-    121: function (e, a, t) {
-      e.exports = t(137);
+    125: function (e, a, t) {
+      e.exports = t(142);
     },
-    133: function (e, a) {
+    138: function (e, a) {
       e.exports = {
         bugs: [
           'Sign contract for "What are conference organizers afraid of?"',
@@ -32,7 +36,7 @@
         ],
       };
     },
-    134: function (e, a, t) {
+    139: function (e, a, t) {
       var r = t(98),
         o = {
           data: {
@@ -174,31 +178,31 @@
         completedTasksChart: i,
       };
     },
-    135: function (e, a, t) {},
-    136: function (e, a, t) {},
-    137: function (e, a, t) {
+    140: function (e, a, t) {},
+    141: function (e, a, t) {},
+    142: function (e, a, t) {
       "use strict";
       t.r(a);
       var r = t(0),
         o = t.n(r),
         n = t(14),
         i = t.n(n),
-        l = t(26),
+        l = t(27),
         c = t(17),
         p = t(25),
-        s = t(99),
-        d = (t(126), t(190)),
+        s = t(100),
+        d = (t(130), t(196)),
         m = t(3),
         g = t(12),
         h = t.n(g),
-        x = t(194),
-        b = t(195),
-        u = t(196),
-        f = t(215),
-        v = t(100),
+        x = t(200),
+        b = t(201),
+        u = t(202),
+        f = t(221),
+        v = t(101),
         w = t.n(v),
-        O = t(20),
-        k = t(192),
+        k = t(20),
+        O = t(198),
         j = t(5),
         C = function (e) {
           e = (e += "").replace("#", "");
@@ -218,24 +222,24 @@
           );
         },
         E = { transition: "all 0.33s cubic-bezier(0.685, 0.0473, 0.346, 1)" },
-        S = {
+        A = {
           paddingRight: "15px",
           paddingLeft: "15px",
           marginRight: "auto",
           marginLeft: "auto",
         },
-        y = {
+        S = {
           fontFamily: '"Roboto", "Helvetica", "Arial", sans-serif',
           fontWeight: "300",
           lineHeight: "1.5em",
         },
-        F = ["#9c27b0", "#ab47bc", "#8e24aa", "#af2cc5"],
-        T = ["#ff9800", "#ffa726", "#fb8c00", "#ffa21a"],
+        y = ["#9c27b0", "#ab47bc", "#8e24aa", "#af2cc5"],
+        F = ["#ff9800", "#ffa726", "#fb8c00", "#ffa21a"],
         N = ["#f44336", "#ef5350", "#e53935", "#f55a4e"],
-        A = ["#4caf50", "#66bb6a", "#43a047", "#5cb860"],
+        T = ["#4caf50", "#66bb6a", "#43a047", "#5cb860"],
         I = ["#00acc1", "#26c6da", "#00acc1", "#00d3ee"],
-        H = ["#e91e63", "#ec407a", "#d81b60", "#eb3573"],
-        R = [
+        R = ["#e91e63", "#ec407a", "#d81b60", "#eb3573"],
+        H = [
           "#999",
           "#777",
           "#3C4858",
@@ -264,23 +268,7 @@
             "0 4px 20px 0 rgba(" +
             C("#000") +
             ",.14), 0 7px 10px -5px rgba(" +
-            C(F[0]) +
-            ",.4)",
-        },
-        W = {
-          boxShadow:
-            "0 4px 20px 0 rgba(" +
-            C("#000") +
-            ",.14), 0 7px 10px -5px rgba(" +
-            C(I[0]) +
-            ",.4)",
-        },
-        P = {
-          boxShadow:
-            "0 4px 20px 0 rgba(" +
-            C("#000") +
-            ",.14), 0 7px 10px -5px rgba(" +
-            C(A[0]) +
+            C(y[0]) +
             ",.4)",
         },
         B = {
@@ -288,7 +276,23 @@
             "0 4px 20px 0 rgba(" +
             C("#000") +
             ",.14), 0 7px 10px -5px rgba(" +
+            C(I[0]) +
+            ",.4)",
+        },
+        W = {
+          boxShadow:
+            "0 4px 20px 0 rgba(" +
+            C("#000") +
+            ",.14), 0 7px 10px -5px rgba(" +
             C(T[0]) +
+            ",.4)",
+        },
+        P = {
+          boxShadow:
+            "0 4px 20px 0 rgba(" +
+            C("#000") +
+            ",.14), 0 7px 10px -5px rgba(" +
+            C(F[0]) +
             ",.4)",
         },
         L = {
@@ -304,42 +308,42 @@
             "0 4px 20px 0 rgba(" +
             C("#000") +
             ",.14), 0 7px 10px -5px rgba(" +
-            C(H[0]) +
+            C(R[0]) +
             ",.4)",
         },
         G = Object(j.a)(
-          { background: "linear-gradient(60deg, " + T[1] + ", " + T[2] + ")" },
-          B
-        ),
-        q = Object(j.a)(
-          { background: "linear-gradient(60deg, " + A[1] + ", " + A[2] + ")" },
+          { background: "linear-gradient(60deg, " + F[1] + ", " + F[2] + ")" },
           P
         ),
         M = Object(j.a)(
+          { background: "linear-gradient(60deg, " + T[1] + ", " + T[2] + ")" },
+          W
+        ),
+        q = Object(j.a)(
           { background: "linear-gradient(60deg, " + N[1] + ", " + N[2] + ")" },
           L
         ),
         K = Object(j.a)(
           { background: "linear-gradient(60deg, " + I[1] + ", " + I[2] + ")" },
-          W
+          B
         ),
         V = Object(j.a)(
-          { background: "linear-gradient(60deg, " + F[1] + ", " + F[2] + ")" },
+          { background: "linear-gradient(60deg, " + y[1] + ", " + y[2] + ")" },
           z
         ),
         Y = Object(j.a)(
-          { background: "linear-gradient(60deg, " + H[1] + ", " + H[2] + ")" },
+          { background: "linear-gradient(60deg, " + R[1] + ", " + R[2] + ")" },
           U
         ),
-        Q =
+        J =
           (Object(j.a)(
             {
               margin: "0 20px 10px",
               paddingTop: "10px",
-              borderTop: "1px solid " + R[10],
+              borderTop: "1px solid " + H[10],
               height: "auto",
             },
-            y
+            S
           ),
           C("#000"),
           C("#000"),
@@ -358,16 +362,16 @@
             transition: "all 150ms ease 0s",
           }),
         Z = {
-          color: R[2],
+          color: H[2],
           textDecoration: "none",
           fontWeight: "300",
           marginTop: "30px",
           marginBottom: "25px",
           minHeight: "32px",
           fontFamily: "'Roboto', 'Helvetica', 'Arial', sans-serif",
-          "& small": { color: R[1], fontWeight: "400", lineHeight: "1" },
+          "& small": { color: H[1], fontWeight: "400", lineHeight: "1" },
         },
-        J =
+        Q =
           (Object(j.a)(
             Object(j.a)({}, Z),
             {},
@@ -390,15 +394,15 @@
             button: {
               minHeight: "auto",
               minWidth: "auto",
-              backgroundColor: R[0],
+              backgroundColor: H[0],
               color: "#FFF",
               boxShadow:
                 "0 2px 2px 0 rgba(" +
-                C(R[0]) +
+                C(H[0]) +
                 ", 0.14), 0 3px 1px -2px rgba(" +
-                C(R[0]) +
+                C(H[0]) +
                 ", 0.2), 0 1px 5px 0 rgba(" +
-                C(R[0]) +
+                C(H[0]) +
                 ", 0.12)",
               border: "none",
               borderRadius: "3px",
@@ -420,14 +424,14 @@
               cursor: "pointer",
               "&:hover,&:focus": {
                 color: "#FFF",
-                backgroundColor: R[0],
+                backgroundColor: H[0],
                 boxShadow:
                   "0 14px 26px -12px rgba(" +
-                  C(R[0]) +
+                  C(H[0]) +
                   ", 0.42), 0 4px 23px 0px rgba(" +
                   C("#000") +
                   ", 0.12), 0 8px 10px -5px rgba(" +
-                  C(R[0]) +
+                  C(H[0]) +
                   ", 0.2)",
               },
               "& .fab,& .fas,& .far,& .fal, &.material-icons": {
@@ -464,49 +468,49 @@
               },
             },
             white: {
-              "&,&:focus,&:hover": { backgroundColor: "#FFF", color: R[0] },
+              "&,&:focus,&:hover": { backgroundColor: "#FFF", color: H[0] },
             },
             rose: {
-              backgroundColor: H[0],
+              backgroundColor: R[0],
               boxShadow:
                 "0 2px 2px 0 rgba(" +
-                C(H[0]) +
+                C(R[0]) +
                 ", 0.14), 0 3px 1px -2px rgba(" +
-                C(H[0]) +
+                C(R[0]) +
                 ", 0.2), 0 1px 5px 0 rgba(" +
-                C(H[0]) +
+                C(R[0]) +
                 ", 0.12)",
               "&:hover,&:focus": {
-                backgroundColor: H[0],
+                backgroundColor: R[0],
                 boxShadow:
                   "0 14px 26px -12px rgba(" +
-                  C(H[0]) +
+                  C(R[0]) +
                   ", 0.42), 0 4px 23px 0px rgba(" +
                   C("#000") +
                   ", 0.12), 0 8px 10px -5px rgba(" +
-                  C(H[0]) +
+                  C(R[0]) +
                   ", 0.2)",
               },
             },
             primary: {
-              backgroundColor: F[0],
+              backgroundColor: y[0],
               boxShadow:
                 "0 2px 2px 0 rgba(" +
-                C(F[0]) +
+                C(y[0]) +
                 ", 0.14), 0 3px 1px -2px rgba(" +
-                C(F[0]) +
+                C(y[0]) +
                 ", 0.2), 0 1px 5px 0 rgba(" +
-                C(F[0]) +
+                C(y[0]) +
                 ", 0.12)",
               "&:hover,&:focus": {
-                backgroundColor: F[0],
+                backgroundColor: y[0],
                 boxShadow:
                   "0 14px 26px -12px rgba(" +
-                  C(F[0]) +
+                  C(y[0]) +
                   ", 0.42), 0 4px 23px 0px rgba(" +
                   C("#000") +
                   ", 0.12), 0 8px 10px -5px rgba(" +
-                  C(F[0]) +
+                  C(y[0]) +
                   ", 0.2)",
               },
             },
@@ -533,28 +537,6 @@
               },
             },
             success: {
-              backgroundColor: A[0],
-              boxShadow:
-                "0 2px 2px 0 rgba(" +
-                C(A[0]) +
-                ", 0.14), 0 3px 1px -2px rgba(" +
-                C(A[0]) +
-                ", 0.2), 0 1px 5px 0 rgba(" +
-                C(A[0]) +
-                ", 0.12)",
-              "&:hover,&:focus": {
-                backgroundColor: A[0],
-                boxShadow:
-                  "0 14px 26px -12px rgba(" +
-                  C(A[0]) +
-                  ", 0.42), 0 4px 23px 0px rgba(" +
-                  C("#000") +
-                  ", 0.12), 0 8px 10px -5px rgba(" +
-                  C(A[0]) +
-                  ", 0.2)",
-              },
-            },
-            warning: {
               backgroundColor: T[0],
               boxShadow:
                 "0 2px 2px 0 rgba(" +
@@ -573,6 +555,28 @@
                   C("#000") +
                   ", 0.12), 0 8px 10px -5px rgba(" +
                   C(T[0]) +
+                  ", 0.2)",
+              },
+            },
+            warning: {
+              backgroundColor: F[0],
+              boxShadow:
+                "0 2px 2px 0 rgba(" +
+                C(F[0]) +
+                ", 0.14), 0 3px 1px -2px rgba(" +
+                C(F[0]) +
+                ", 0.2), 0 1px 5px 0 rgba(" +
+                C(F[0]) +
+                ", 0.12)",
+              "&:hover,&:focus": {
+                backgroundColor: F[0],
+                boxShadow:
+                  "0 14px 26px -12px rgba(" +
+                  C(F[0]) +
+                  ", 0.42), 0 4px 23px 0px rgba(" +
+                  C("#000") +
+                  ", 0.12), 0 8px 10px -5px rgba(" +
+                  C(F[0]) +
                   ", 0.2)",
               },
             },
@@ -604,11 +608,11 @@
                 background: "transparent",
                 boxShadow: "none",
               },
-              "&$rose": { "&,&:focus,&:hover,&:visited": { color: H[0] } },
-              "&$primary": { "&,&:focus,&:hover,&:visited": { color: F[0] } },
+              "&$rose": { "&,&:focus,&:hover,&:visited": { color: R[0] } },
+              "&$primary": { "&,&:focus,&:hover,&:visited": { color: y[0] } },
               "&$info": { "&,&:focus,&:hover,&:visited": { color: I[0] } },
-              "&$success": { "&,&:focus,&:hover,&:visited": { color: A[0] } },
-              "&$warning": { "&,&:focus,&:hover,&:visited": { color: T[0] } },
+              "&$success": { "&,&:focus,&:hover,&:visited": { color: T[0] } },
+              "&$warning": { "&,&:focus,&:hover,&:visited": { color: F[0] } },
               "&$danger": { "&,&:focus,&:hover,&:visited": { color: N[0] } },
             },
             transparent: {
@@ -636,7 +640,7 @@
             link: {
               "&,&:hover,&:focus": {
                 backgroundColor: "transparent",
-                color: R[0],
+                color: H[0],
                 boxShadow: "none",
               },
             },
@@ -673,7 +677,7 @@
               },
             },
           }),
-        X = Object(d.a)(J);
+        X = Object(d.a)(Q);
       function $(e) {
         var a,
           t = X(),
@@ -688,7 +692,7 @@
           g = e.justIcon,
           x = e.className,
           b = e.muiClasses,
-          u = Object(O.a)(e, [
+          u = Object(k.a)(e, [
             "color",
             "round",
             "children",
@@ -716,7 +720,7 @@
             a)
           );
         return o.a.createElement(
-          k.a,
+          O.a,
           Object.assign({}, u, { classes: b, className: f }),
           i
         );
@@ -732,7 +736,7 @@
               width: "100%",
               paddingTop: "10px",
               zIndex: "1029",
-              color: R[7],
+              color: H[7],
               border: "0",
               borderRadius: "3px",
               padding: "10px 0",
@@ -741,13 +745,13 @@
               display: "block",
             },
             container: Object(j.a)(
-              Object(j.a)({}, S),
+              Object(j.a)({}, A),
               {},
               { minHeight: "50px" }
             ),
             flex: { flex: 1 },
             title: Object(j.a)(
-              Object(j.a)({}, y),
+              Object(j.a)({}, S),
               {},
               {
                 letterSpacing: "unset",
@@ -761,11 +765,11 @@
               }
             ),
             appResponsive: { top: "8px" },
-            primary: Object(j.a)({ backgroundColor: F[0], color: "#FFF" }, Q),
-            info: Object(j.a)({ backgroundColor: I[0], color: "#FFF" }, Q),
-            success: Object(j.a)({ backgroundColor: A[0], color: "#FFF" }, Q),
-            warning: Object(j.a)({ backgroundColor: T[0], color: "#FFF" }, Q),
-            danger: Object(j.a)({ backgroundColor: N[0], color: "#FFF" }, Q),
+            primary: Object(j.a)({ backgroundColor: y[0], color: "#FFF" }, J),
+            info: Object(j.a)({ backgroundColor: I[0], color: "#FFF" }, J),
+            success: Object(j.a)({ backgroundColor: T[0], color: "#FFF" }, J),
+            warning: Object(j.a)({ backgroundColor: F[0], color: "#FFF" }, J),
+            danger: Object(j.a)({ backgroundColor: N[0], color: "#FFF" }, J),
           };
         },
         ee = Object(d.a)(_);
@@ -817,8 +821,8 @@
           )
         );
       }
-      var te = t(140),
-        re = t(139),
+      var te = t(145),
+        re = t(144),
         oe = {
           block: Object(j.a)(
             Object(j.a)(
@@ -831,7 +835,7 @@
                 position: "relative",
                 display: "block",
               },
-              y
+              S
             ),
             {},
             { fontWeight: "500", fontSize: "12px" }
@@ -844,13 +848,13 @@
             float: "right!important",
           },
           footer: Object(j.a)(
-            { bottom: "0", borderTop: "1px solid " + R[11], padding: "15px 0" },
-            y
+            { bottom: "0", borderTop: "1px solid " + H[11], padding: "15px 0" },
+            S
           ),
           bold: { fontWeight: "bold" },
-          container: S,
+          container: A,
           a: {
-            color: F,
+            color: y,
             textDecoration: "none",
             backgroundColor: "transparent",
           },
@@ -916,55 +920,70 @@
                   "Creative Tim"
                 ),
                 ", made with love for a better web"
+              ),
+              ",",
+              o.a.createElement(
+                "span",
+                null,
+                " ",
+                "Icons from",
+                " ",
+                o.a.createElement(
+                  "a",
+                  { src: "https://thenounproject.com/jovenfabuloso/" },
+                  "Fabi\xe1n Sanabria"
+                ),
+                " ",
+                "of the Noun Project"
               )
             )
           )
         );
       }
       var le = t(64),
-        ce = t(213),
-        pe = t(218),
-        se = t(204),
-        de = t(202),
-        me = t(201),
-        ge = t(199),
-        he = t(138),
-        xe = t(200),
-        be = t(198),
-        ue = t(203),
+        ce = t(219),
+        pe = t(224),
+        se = t(210),
+        de = t(208),
+        me = t(207),
+        ge = t(205),
+        he = t(143),
+        xe = t(206),
+        be = t(204),
+        ue = t(209),
         fe = t(73),
         ve = t.n(fe),
         we = t(71),
-        Oe = t.n(we),
-        ke = t(52),
-        je = t.n(ke),
+        ke = t.n(we),
+        Oe = t(52),
+        je = t.n(Oe),
         Ce = t(70),
         Ee = t.n(Ce),
-        Se = t(197),
-        ye = t(222),
-        Fe = t(217),
-        Te = t(101),
-        Ne = t.n(Te),
-        Ae = t(61),
-        Ie = t.n(Ae),
-        He = {
+        Ae = t(203),
+        Se = t(228),
+        ye = t(223),
+        Fe = t(102),
+        Ne = t.n(Fe),
+        Te = t(61),
+        Ie = t.n(Te),
+        Re = {
           disabled: {
             "&:before": { backgroundColor: "transparent !important" },
           },
           underline: {
             "&:hover:not($disabled):before,&:before": {
-              borderColor: R[4] + " !important",
+              borderColor: H[4] + " !important",
               borderWidth: "1px !important",
             },
-            "&:after": { borderColor: F[0] },
+            "&:after": { borderColor: y[0] },
           },
           underlineError: { "&:after": { borderColor: N[0] } },
-          underlineSuccess: { "&:after": { borderColor: A[0] } },
+          underlineSuccess: { "&:after": { borderColor: T[0] } },
           labelRoot: Object(j.a)(
-            Object(j.a)({}, y),
+            Object(j.a)({}, S),
             {},
             {
-              color: R[3] + " !important",
+              color: H[3] + " !important",
               fontWeight: "400",
               fontSize: "14px",
               lineHeight: "1.42857",
@@ -972,7 +991,7 @@
             }
           ),
           labelRootError: { color: N[0] },
-          labelRootSuccess: { color: A[0] },
+          labelRootSuccess: { color: T[0] },
           feedback: {
             position: "absolute",
             top: "18px",
@@ -992,11 +1011,11 @@
             verticalAlign: "unset",
           },
         },
-        Re = Object(d.a)(He);
+        He = Object(d.a)(Re);
       function De(e) {
         var a,
           t,
-          r = Re(),
+          r = He(),
           n = e.formControlProps,
           i = e.labelText,
           l = e.id,
@@ -1019,19 +1038,19 @@
           ),
           b = h()(Object(m.a)({}, r.marginTop, void 0 === i));
         return o.a.createElement(
-          Se.a,
+          Ae.a,
           Object.assign({}, n, {
             className: n.className + " " + r.formControl,
           }),
           void 0 !== i
             ? o.a.createElement(
-                ye.a,
+                Se.a,
                 Object.assign({ className: r.labelRoot + g, htmlFor: l }, c),
                 i
               )
             : null,
           o.a.createElement(
-            Fe.a,
+            ye.a,
             Object.assign(
               {
                 classes: { root: b, disabled: r.disabled, underline: x },
@@ -1065,12 +1084,12 @@
                 display: "block",
                 width: "30px",
                 height: "30px",
-                color: R[9],
+                color: H[9],
                 marginRight: "15px",
               }
             ),
             linkText: Object(j.a)(
-              Object(j.a)({ zIndex: "4" }, y),
+              Object(j.a)({ zIndex: "4" }, S),
               {},
               { fontSize: "14px" }
             ),
@@ -1130,7 +1149,7 @@
               backgroundClip: "padding-box",
             },
             dropdownItem: Object(j.a)(
-              Object(j.a)({}, y),
+              Object(j.a)({}, S),
               {},
               {
                 fontSize: "13px",
@@ -1146,19 +1165,19 @@
                 clear: "both",
                 fontWeight: "400",
                 lineHeight: "1.42857143",
-                color: R[8],
+                color: H[8],
                 whiteSpace: "nowrap",
                 height: "unset",
                 minHeight: "unset",
                 "&:hover": Object(j.a)(
-                  { backgroundColor: F[0], color: "#FFF" },
+                  { backgroundColor: y[0], color: "#FFF" },
                   z
                 ),
               }
             ),
           };
         },
-        We = function (e) {
+        Be = function (e) {
           var a, t, r;
           return Object(j.a)(
             Object(j.a)({}, ze(e)),
@@ -1179,7 +1198,7 @@
                 }
               ),
               linkText: Object(j.a)(
-                Object(j.a)({ zIndex: "4" }, y),
+                Object(j.a)({ zIndex: "4" }, S),
                 {},
                 { fontSize: "14px", margin: "0px" }
               ),
@@ -1232,7 +1251,7 @@
                   a,
                   e.breakpoints.down("sm"),
                   Object(j.a)(
-                    Object(j.a)({}, y),
+                    Object(j.a)({}, S),
                     {},
                     { fontSize: "14px", marginRight: "8px" }
                   )
@@ -1254,9 +1273,9 @@
             }
           );
         },
-        Pe = Object(d.a)(We);
-      function Be() {
-        var e = Pe(),
+        We = Object(d.a)(Be);
+      function Pe() {
+        var e = We(),
           a = o.a.useState(null),
           t = Object(p.a)(a, 2),
           r = t[0],
@@ -1322,7 +1341,7 @@
                 },
                 className: e.buttonLink,
               },
-              o.a.createElement(Oe.a, { className: e.icons }),
+              o.a.createElement(ke.a, { className: e.icons }),
               o.a.createElement("span", { className: e.notifications }, "5"),
               o.a.createElement(
                 f.a,
@@ -1499,7 +1518,7 @@
                 }
               ),
               linkText: Object(j.a)(
-                Object(j.a)({ zIndex: "4" }, y),
+                Object(j.a)({ zIndex: "4" }, S),
                 {},
                 { fontSize: "14px", margin: "0px" }
               ),
@@ -1552,7 +1571,7 @@
                   a,
                   e.breakpoints.down("sm"),
                   Object(j.a)(
-                    Object(j.a)({}, y),
+                    Object(j.a)({}, S),
                     {},
                     { fontSize: "14px", marginRight: "8px" }
                   )
@@ -1640,7 +1659,7 @@
                 onClick: i,
                 className: e.buttonLink,
               },
-              o.a.createElement(Oe.a, { className: e.icons }),
+              o.a.createElement(ke.a, { className: e.icons }),
               o.a.createElement(
                 "span",
                 { className: e.notifications },
@@ -1741,7 +1760,7 @@
           )
         );
       }
-      var qe = function (e) {
+      var Me = function (e) {
           var a, t;
           return {
             drawerPaper: Object(j.a)(
@@ -1812,11 +1831,11 @@
                 height: "1px",
                 right: "15px",
                 width: "calc(100% - 30px)",
-                backgroundColor: "rgba(" + C(R[6]) + ", 0.3)",
+                backgroundColor: "rgba(" + C(H[6]) + ", 0.3)",
               },
             },
             logoLink: Object(j.a)(
-              Object(j.a)({}, y),
+              Object(j.a)({}, S),
               {},
               {
                 textTransform: "uppercase",
@@ -1893,7 +1912,7 @@
                 padding: "10px 15px",
                 backgroundColor: "transparent",
               },
-              y
+              S
             ),
             itemIcon: {
               width: "24px",
@@ -1912,7 +1931,7 @@
               float: "right",
             },
             itemText: Object(j.a)(
-              Object(j.a)({}, y),
+              Object(j.a)({}, S),
               {},
               {
                 margin: "0",
@@ -1924,9 +1943,9 @@
             itemTextRTL: { textAlign: "right" },
             whiteFont: { color: "#FFF" },
             purple: Object(j.a)(
-              Object(j.a)({ backgroundColor: F[0] }, z),
+              Object(j.a)({ backgroundColor: y[0] }, z),
               {},
-              { "&:hover,&:focus": Object(j.a)({ backgroundColor: F[0] }, z) }
+              { "&:hover,&:focus": Object(j.a)({ backgroundColor: y[0] }, z) }
             ),
             blue: {
               backgroundColor: I[0],
@@ -1951,28 +1970,6 @@
               },
             },
             green: {
-              backgroundColor: A[0],
-              boxShadow:
-                "0 12px 20px -10px rgba(" +
-                C(A[0]) +
-                ",.28), 0 4px 20px 0 rgba(" +
-                C("#000") +
-                ",.12), 0 7px 8px -5px rgba(" +
-                C(A[0]) +
-                ",.2)",
-              "&:hover,&:focus": {
-                backgroundColor: A[0],
-                boxShadow:
-                  "0 12px 20px -10px rgba(" +
-                  C(A[0]) +
-                  ",.28), 0 4px 20px 0 rgba(" +
-                  C("#000") +
-                  ",.12), 0 7px 8px -5px rgba(" +
-                  C(A[0]) +
-                  ",.2)",
-              },
-            },
-            orange: {
               backgroundColor: T[0],
               boxShadow:
                 "0 12px 20px -10px rgba(" +
@@ -1991,6 +1988,28 @@
                   C("#000") +
                   ",.12), 0 7px 8px -5px rgba(" +
                   C(T[0]) +
+                  ",.2)",
+              },
+            },
+            orange: {
+              backgroundColor: F[0],
+              boxShadow:
+                "0 12px 20px -10px rgba(" +
+                C(F[0]) +
+                ",.28), 0 4px 20px 0 rgba(" +
+                C("#000") +
+                ",.12), 0 7px 8px -5px rgba(" +
+                C(F[0]) +
+                ",.2)",
+              "&:hover,&:focus": {
+                backgroundColor: F[0],
+                boxShadow:
+                  "0 12px 20px -10px rgba(" +
+                  C(F[0]) +
+                  ",.28), 0 4px 20px 0 rgba(" +
+                  C("#000") +
+                  ",.12), 0 7px 8px -5px rgba(" +
+                  C(F[0]) +
                   ",.2)",
               },
             },
@@ -2031,9 +2050,9 @@
             }),
           };
         },
-        Me = Object(d.a)(qe);
+        qe = Object(d.a)(Me);
       function Ke(e) {
-        var a = Me();
+        var a = qe();
         function t(e) {
           return window.location.href.indexOf(e) > -1;
         }
@@ -2150,7 +2169,7 @@
                 { className: a.sidebarWrapper },
                 e.rtlActive
                   ? o.a.createElement(Ge, null)
-                  : o.a.createElement(Be, null),
+                  : o.a.createElement(Pe, null),
                 p
               ),
               void 0 !== i
@@ -2189,54 +2208,58 @@
           )
         );
       }
-      var Ve = t(105),
+      var Ve = t(109),
         Ye = t.n(Ve),
-        Qe = t(34),
+        Je = t(34),
         Ze = t(35),
-        Je = t(39),
+        Qe = t(39),
         Xe = t(37),
-        $e = (t(132), t(7)),
-        _e = t(86),
-        ea = t.n(_e),
-        aa = t(205),
-        ta = Object(d.a)({ grid: { padding: "0 15px !important" } });
-      function ra(e) {
-        var a = ta(),
+        $e = (t(136), t(81)),
+        _e = t.n($e),
+        ea = t(7),
+        aa = t(107),
+        ta = t.n(aa),
+        ra = t(106),
+        oa = t.n(ra),
+        na = t(211),
+        ia = Object(d.a)({ grid: { padding: "0 15px !important" } });
+      function la(e) {
+        var a = ia(),
           t = e.children,
-          r = Object(O.a)(e, ["children"]);
+          r = Object(k.a)(e, ["children"]);
         return o.a.createElement(
-          aa.a,
+          na.a,
           Object.assign({ item: !0 }, r, { className: a.grid }),
           t
         );
       }
-      var oa = Object(d.a)({
+      var ca = Object(d.a)({
         grid: { margin: "0 -15px !important", width: "unset" },
       });
-      function na(e) {
-        var a = oa(),
+      function pa(e) {
+        var a = ca(),
           t = e.children,
-          r = Object(O.a)(e, ["children"]);
+          r = Object(k.a)(e, ["children"]);
         return o.a.createElement(
-          aa.a,
+          na.a,
           Object.assign({ container: !0 }, r, { className: a.grid }),
           t
         );
       }
-      var ia = t(206),
-        la = t(207),
-        ca = t(208),
-        pa = t(210),
-        sa = t(209),
-        da = function (e) {
+      var sa = t(212),
+        da = t(213),
+        ma = t(214),
+        ga = t(216),
+        ha = t(215),
+        xa = function (e) {
           return {
-            warningTableHeader: { color: T[0] },
-            primaryTableHeader: { color: F[0] },
+            warningTableHeader: { color: F[0] },
+            primaryTableHeader: { color: y[0] },
             dangerTableHeader: { color: N[0] },
-            successTableHeader: { color: A[0] },
+            successTableHeader: { color: T[0] },
             infoTableHeader: { color: I[0] },
-            roseTableHeader: { color: H[0] },
-            grayTableHeader: { color: R[0] },
+            roseTableHeader: { color: R[0] },
+            grayTableHeader: { color: H[0] },
             table: {
               marginBottom: "0",
               width: "100%",
@@ -2246,12 +2269,12 @@
               borderCollapse: "collapse",
             },
             tableHeadCell: Object(j.a)(
-              Object(j.a)({ color: "inherit" }, y),
+              Object(j.a)({ color: "inherit" }, S),
               {},
               { "&, &$tableCell": { fontSize: "1em" } }
             ),
             tableCell: Object(j.a)(
-              Object(j.a)({}, y),
+              Object(j.a)({}, S),
               {},
               {
                 lineHeight: "1.42857143",
@@ -2281,9 +2304,9 @@
             },
           };
         },
-        ma = Object(d.a)(da);
-      function ga(e) {
-        var a = ma(),
+        ba = Object(d.a)(xa);
+      function ua(e) {
+        var a = ba(),
           t = e.tableHead,
           r = e.tableData,
           n = e.tableHeaderColor;
@@ -2291,18 +2314,18 @@
           "div",
           { className: a.tableResponsive },
           o.a.createElement(
-            ia.a,
+            sa.a,
             { className: a.table },
             void 0 !== t
               ? o.a.createElement(
-                  la.a,
+                  da.a,
                   { className: a[n + "TableHeader"] },
                   o.a.createElement(
-                    ca.a,
+                    ma.a,
                     { className: a.tableHeadRow },
                     t.map(function (e, t) {
                       return o.a.createElement(
-                        sa.a,
+                        ha.a,
                         {
                           className: a.tableCell + " " + a.tableHeadCell,
                           key: t,
@@ -2314,15 +2337,15 @@
                 )
               : null,
             o.a.createElement(
-              pa.a,
+              ga.a,
               null,
               r.map(function (e, t) {
                 return o.a.createElement(
-                  ca.a,
+                  ma.a,
                   { key: t, className: a.tableBodyRow },
                   e.map(function (e, t) {
                     return o.a.createElement(
-                      sa.a,
+                      ha.a,
                       { className: a.tableCell, key: t },
                       e
                     );
@@ -2333,9 +2356,9 @@
           )
         );
       }
-      ga.defaultProps = { tableHeaderColor: "gray" };
-      t(89), t(216), t(223), t(103), t(104);
-      var ha = {
+      ua.defaultProps = { tableHeaderColor: "gray" };
+      t(90), t(222), t(229), t(104), t(105);
+      var fa = {
           tooltip: {
             padding: "10px 15px",
             minWidth: "130px",
@@ -2366,10 +2389,10 @@
             lineBreak: "auto",
           },
         },
-        xa = {
+        va = {
           root: { padding: "13px", "&:hover": { backgroundColor: "unset" } },
           labelRoot: { marginLeft: "-14px" },
-          checked: { color: F[0] + "!important" },
+          checked: { color: y[0] + "!important" },
           checkedIcon: {
             width: "20px",
             height: "20px",
@@ -2383,11 +2406,11 @@
             border: "1px solid rgba(" + C("#000") + ", .54)",
             borderRadius: "3px",
           },
-          radio: { color: F[0] + "!important" },
+          radio: { color: y[0] + "!important" },
           radioChecked: {
             width: "20px",
             height: "20px",
-            border: "1px solid " + F[0],
+            border: "1px solid " + y[0],
             borderRadius: "50%",
           },
           radioUnchecked: {
@@ -2398,14 +2421,14 @@
             borderRadius: "50%",
           },
         },
-        ba = Object(j.a)(
-          Object(j.a)(Object(j.a)({}, ha), xa),
+        wa = Object(j.a)(
+          Object(j.a)(Object(j.a)({}, fa), va),
           {},
           {
             table: { marginBottom: "0", overflow: "visible" },
             tableRow: {
               position: "relative",
-              borderBottom: "1px solid " + R[5],
+              borderBottom: "1px solid " + H[5],
             },
             tableActions: {
               display: "flex",
@@ -2414,7 +2437,7 @@
               verticalAlign: "middle",
             },
             tableCell: Object(j.a)(
-              Object(j.a)({}, y),
+              Object(j.a)({}, S),
               {},
               {
                 padding: "8px",
@@ -2429,7 +2452,7 @@
             tableActionButtonIcon: { width: "17px", height: "17px" },
             edit: {
               backgroundColor: "transparent",
-              color: F[0],
+              color: y[0],
               boxShadow: "none",
             },
             close: {
@@ -2439,9 +2462,9 @@
             },
           }
         );
-      Object(d.a)(ba);
-      t(214), t(211);
-      var ua = {
+      Object(d.a)(wa);
+      t(220), t(217);
+      var ka = {
           card: {
             border: "0",
             marginBottom: "30px",
@@ -2462,16 +2485,16 @@
           cardProfile: { marginTop: "30px", textAlign: "center" },
           cardChart: { "& p": { marginTop: "0px", paddingTop: "0px" } },
         },
-        fa = Object(d.a)(ua);
-      function va(e) {
+        Oa = Object(d.a)(ka);
+      function ja(e) {
         var a,
-          t = fa(),
+          t = Oa(),
           r = e.className,
           n = e.children,
           i = e.plain,
           l = e.profile,
           c = e.chart,
-          p = Object(O.a)(e, [
+          p = Object(k.a)(e, [
             "className",
             "children",
             "plain",
@@ -2489,7 +2512,7 @@
           );
         return o.a.createElement("div", Object.assign({ className: s }, p), n);
       }
-      var wa = {
+      var Ca = {
           cardBody: {
             padding: "0.9375rem 20px",
             flex: "1 1 auto",
@@ -2499,15 +2522,15 @@
           cardBodyPlain: { paddingLeft: "5px", paddingRight: "5px" },
           cardBodyProfile: { marginTop: "15px" },
         },
-        Oa = Object(d.a)(wa);
-      function ka(e) {
+        Ea = Object(d.a)(Ca);
+      function Aa(e) {
         var a,
-          t = Oa(),
+          t = Ea(),
           r = e.className,
           n = e.children,
           i = e.plain,
           l = e.profile,
-          c = Object(O.a)(e, ["className", "children", "plain", "profile"]),
+          c = Object(k.a)(e, ["className", "children", "plain", "profile"]),
           p = h()(
             ((a = {}),
             Object(m.a)(a, t.cardBody, !0),
@@ -2518,7 +2541,7 @@
           );
         return o.a.createElement("div", Object.assign({ className: p }, c), n);
       }
-      var ja = {
+      var Sa = {
           cardHeader: {
             padding: "0.75rem 1.25rem",
             marginBottom: "0",
@@ -2593,11 +2616,11 @@
           },
           successCardHeader: {
             color: "#FFF",
-            "&:not($cardHeaderIcon)": Object(j.a)({}, q),
+            "&:not($cardHeaderIcon)": Object(j.a)({}, M),
           },
           dangerCardHeader: {
             color: "#FFF",
-            "&:not($cardHeaderIcon)": Object(j.a)({}, M),
+            "&:not($cardHeaderIcon)": Object(j.a)({}, q),
           },
           infoCardHeader: {
             color: "#FFF",
@@ -2612,17 +2635,17 @@
             "&:not($cardHeaderIcon)": Object(j.a)({}, Y),
           },
         },
-        Ca = Object(d.a)(ja);
-      function Ea(e) {
+        ya = Object(d.a)(Sa);
+      function Fa(e) {
         var a,
-          t = Ca(),
+          t = ya(),
           r = e.className,
           n = e.children,
           i = e.color,
           l = e.plain,
           c = e.stats,
           p = e.icon,
-          s = Object(O.a)(e, [
+          s = Object(k.a)(e, [
             "className",
             "children",
             "color",
@@ -2642,7 +2665,7 @@
           );
         return o.a.createElement("div", Object.assign({ className: d }, s), n);
       }
-      var Sa = {
+      var Na = {
         cardTitle: {
           float: "left",
           padding: "10px 10px 10px 0px",
@@ -2694,10 +2717,10 @@
           },
         },
       };
-      Object(d.a)(Sa);
-      var ya = {
+      Object(d.a)(Na);
+      var Ta = {
         defaultFontStyle: Object(j.a)(
-          Object(j.a)({}, y),
+          Object(j.a)({}, S),
           {},
           { fontSize: "14px" }
         ),
@@ -2706,28 +2729,28 @@
           padding: "10px 20px",
           margin: "0 0 20px",
           fontSize: "17.5px",
-          borderLeft: "5px solid " + R[10],
+          borderLeft: "5px solid " + H[10],
         },
         quoteText: { margin: "0 0 10px", fontStyle: "italic" },
         quoteAuthor: {
           display: "block",
           fontSize: "80%",
           lineHeight: "1.42857143",
-          color: R[1],
+          color: H[1],
         },
-        mutedText: { color: R[1] },
-        primaryText: { color: F[0] },
+        mutedText: { color: H[1] },
+        primaryText: { color: y[0] },
         infoText: { color: I[0] },
-        successText: { color: A[0] },
-        warningText: { color: T[0] },
+        successText: { color: T[0] },
+        warningText: { color: F[0] },
         dangerText: { color: N[0] },
       };
-      Object(d.a)(ya);
-      var Fa = {
+      Object(d.a)(Ta);
+      var Ia = {
           cardIcon: {
             "&$warningCardHeader,&$successCardHeader,&$dangerCardHeader,&$infoCardHeader,&$primaryCardHeader,&$roseCardHeader": {
               borderRadius: "3px",
-              backgroundColor: R[0],
+              backgroundColor: H[0],
               padding: "15px",
               marginTop: "-20px",
               marginRight: "15px",
@@ -2735,20 +2758,20 @@
             },
           },
           warningCardHeader: G,
-          successCardHeader: q,
-          dangerCardHeader: M,
+          successCardHeader: M,
+          dangerCardHeader: q,
           infoCardHeader: K,
           primaryCardHeader: V,
           roseCardHeader: Y,
         },
-        Ta = Object(d.a)(Fa);
-      function Na(e) {
+        Ra = Object(d.a)(Ia);
+      function Ha(e) {
         var a,
-          t = Ta(),
+          t = Ra(),
           r = e.className,
           n = e.children,
           i = e.color,
-          l = Object(O.a)(e, ["className", "children", "color"]),
+          l = Object(k.a)(e, ["className", "children", "color"]),
           c = h()(
             ((a = {}),
             Object(m.a)(a, t.cardIcon, !0),
@@ -2758,7 +2781,7 @@
           );
         return o.a.createElement("div", Object.assign({ className: c }, l), n);
       }
-      var Aa = {
+      var Da = {
           cardFooter: {
             padding: "0",
             paddingTop: "10px",
@@ -2777,7 +2800,7 @@
             backgroundColor: "transparent",
           },
           cardFooterStats: {
-            borderTop: "1px solid " + R[10],
+            borderTop: "1px solid " + H[10],
             marginTop: "20px",
             "& svg": {
               position: "relative",
@@ -2795,19 +2818,19 @@
               marginLeft: "3px",
             },
           },
-          cardFooterChart: { borderTop: "1px solid " + R[10] },
+          cardFooterChart: { borderTop: "1px solid " + H[10] },
         },
-        Ia = Object(d.a)(Aa);
-      function Ha(e) {
+        za = Object(d.a)(Da);
+      function Ba(e) {
         var a,
-          t = Ia(),
+          t = za(),
           r = e.className,
           n = e.children,
           i = e.plain,
           l = e.profile,
           c = e.stats,
           p = e.chart,
-          s = Object(O.a)(e, [
+          s = Object(k.a)(e, [
             "className",
             "children",
             "plain",
@@ -2827,64 +2850,61 @@
           );
         return o.a.createElement("div", Object.assign({ className: d }, s), n);
       }
-      var Ra,
-        Da = t(85),
-        za = t.n(Da),
-        Wa = (function (e) {
-          Object(Je.a)(t, e);
+      var Wa,
+        Pa = t(87),
+        La = t.n(Pa),
+        Ua = (function (e) {
+          Object(Qe.a)(t, e);
           var a = Object(Xe.a)(t);
           function t(e) {
-            return Object(Qe.a)(this, t), a.call(this, e);
+            return Object(Je.a)(this, t), a.call(this, e);
           }
           return (
             Object(Ze.a)(t, [
               {
                 key: "render",
                 value: function () {
-                  return (
-                    console.log(this.props.cardValue),
+                  return o.a.createElement(
+                    la,
+                    {
+                      xs: this.props.cardValue.gridItemSizes.xs,
+                      sm: this.props.cardValue.gridItemSizes.sm,
+                      md: this.props.cardValue.gridItemSizes.md,
+                    },
                     o.a.createElement(
-                      ra,
-                      {
-                        xs: this.props.cardValue.gridItemSizes.xs,
-                        sm: this.props.cardValue.gridItemSizes.sm,
-                        md: this.props.cardValue.gridItemSizes.md,
-                      },
+                      ja,
+                      null,
                       o.a.createElement(
-                        va,
-                        null,
-                        o.a.createElement(
-                          Ea,
-                          {
-                            color: this.props.cardValue.cardInfoColor,
-                            stats: !0,
-                            icon: !0,
-                          },
-                          o.a.createElement(
-                            Na,
-                            { color: this.props.cardValue.cardInfoColor },
-                            this.props.cardValue.cardIconContent
-                          ),
-                          o.a.createElement(
-                            "p",
-                            { className: this.props.classes.cardCategory },
-                            this.props.cardValue.title
-                          ),
-                          o.a.createElement(
-                            "h3",
-                            { className: this.props.classes.cardTitle },
-                            this.props.cardValue.value
-                          )
-                        ),
+                        Fa,
+                        {
+                          color: this.props.cardValue.cardInfoColor,
+                          stats: !0,
+                          icon: !0,
+                        },
                         o.a.createElement(
                           Ha,
-                          { stats: !0 },
-                          o.a.createElement(
-                            "div",
-                            { className: this.props.classes.stats },
-                            o.a.createElement(za.a, null),
-                            this.props.cardValue.footerTitle
-                          )
+                          { color: this.props.cardValue.cardInfoColor },
+                          this.props.cardValue.cardIconContent
+                        ),
+                        o.a.createElement(
+                          "p",
+                          { className: this.props.classes.cardCategory },
+                          this.props.cardValue.title
+                        ),
+                        o.a.createElement(
+                          "h3",
+                          { className: this.props.classes.cardTitle },
+                          this.props.cardValue.value
+                        )
+                      ),
+                      o.a.createElement(
+                        Ba,
+                        { stats: !0 },
+                        o.a.createElement(
+                          "div",
+                          { className: this.props.classes.stats },
+                          o.a.createElement(La.a, null),
+                          this.props.cardValue.footerTitle
                         )
                       )
                     )
@@ -2895,11 +2915,11 @@
             t
           );
         })(r.Component),
-        Pa = {
-          successText: { color: A[0] },
+        Ga = {
+          successText: { color: T[0] },
           upArrowCardCategory: { width: "16px", height: "16px" },
           stats: {
-            color: R[0],
+            color: H[0],
             display: "inline-flex",
             fontSize: "12px",
             lineHeight: "22px",
@@ -2920,7 +2940,7 @@
             },
           },
           cardCategory: {
-            color: R[0],
+            color: H[0],
             margin: "0",
             fontSize: "14px",
             marginTop: "0",
@@ -2935,14 +2955,14 @@
             marginBottom: "0",
           },
           cardTitle: {
-            color: R[2],
+            color: H[2],
             marginTop: "0px",
             minHeight: "auto",
             fontWeight: "300",
             fontFamily: "'Roboto', 'Helvetica', 'Arial', sans-serif",
             marginBottom: "3px",
             textDecoration: "none",
-            "& small": { color: R[1], fontWeight: "400", lineHeight: "1" },
+            "& small": { color: H[1], fontWeight: "400", lineHeight: "1" },
           },
           cardTitleWhite: {
             color: "#FFF",
@@ -2952,12 +2972,12 @@
             fontFamily: "'Roboto', 'Helvetica', 'Arial', sans-serif",
             marginBottom: "3px",
             textDecoration: "none",
-            "& small": { color: R[1], fontWeight: "400", lineHeight: "1" },
+            "& small": { color: H[1], fontWeight: "400", lineHeight: "1" },
           },
         },
-        Ba =
-          (t(133),
-          t(134),
+        Ma =
+          (t(138),
+          t(139),
           {
             title: "",
             value: null,
@@ -2966,17 +2986,17 @@
             footerTitle: "",
             cardIconContent: null,
           }),
-        La = (function (e) {
-          Object(Je.a)(t, e);
+        qa = (function (e) {
+          Object(Qe.a)(t, e);
           var a = Object(Xe.a)(t);
           function t(e) {
             var r;
             return (
-              Object(Qe.a)(this, t),
+              Object(Je.a)(this, t),
               ((r = a.call(this, e)).state = {
                 deviceData: [],
-                deviceCount: Ba,
-                triggerCount: Ba,
+                deviceCount: Ma,
+                triggerCount: Ma,
               }),
               fetch(
                 "https://marine-protected-areas-v279620.et.r.appspot.com/dashboard/api/alldata"
@@ -2988,7 +3008,9 @@
                   r.setState({ deviceData: e });
                 })
                 .then(function () {
-                  r.getDeviceCount(), r.getTriggeredCount();
+                  r.getVesselCount(),
+                    r.getTriggeredCount(),
+                    r.getTriggerByVessel();
                 })
                 .catch(console.log),
               r
@@ -2996,6 +3018,16 @@
           }
           return (
             Object(Ze.a)(t, [
+              {
+                key: "getTriggerByVessel",
+                value: function () {
+                  var e = _e.a.filter(this.state.deviceData, function (e) {
+                    return "triggered" === e.telemetry.state;
+                  });
+                  _e.a.uniqBy(e, "device.identifier"),
+                    _e.a.groupBy(e, "device.identifier");
+                },
+              },
               {
                 key: "getTriggeredCount",
                 value: function () {
@@ -3010,29 +3042,24 @@
                       return a.telemetry.date_proc - e.telemetry.date_proc;
                     })[0],
                     t =
-                      "Last trigger " +
+                      "Last tracked " +
                       a.telemetry.date_proc_str +
                       " from " +
                       a.device.name;
                   this.setState({
                     triggerCount: {
-                      title: "Trigger Counts",
+                      title: "Fisherman tracked (xx) times",
                       cardInfoColor: "danger",
                       value: e,
-                      cardIconContent: o.a.createElement(
-                        se.a,
-                        null,
-                        "info_outline"
-                      ),
-                      gridItemSizes: { xs: 12, sm: 3, md: 6 },
+                      cardIconContent: o.a.createElement(oa.a, null),
+                      gridItemSizes: { xs: 12, sm: 3, md: 4 },
                       footerTitle: t,
                     },
-                  }),
-                    console.log("triggerCount", this.state.triggerCount);
+                  });
                 },
               },
               {
-                key: "getDeviceCount",
+                key: "getVesselCount",
                 value: function () {
                   var e = this.state.deviceData
                       .map(function (e) {
@@ -3042,17 +3069,17 @@
                         return t.indexOf(e) === a;
                       }).length,
                     a =
-                      "Recently triggered " +
+                      "Recently tracked " +
                       this.state.deviceData.sort(function (e, a) {
                         return a.telemetry.date_proc - e.telemetry.date_proc;
                       })[0].telemetry.date_proc_str;
                   this.setState({
                     deviceCount: {
-                      title: "Devices",
+                      title: "Vessel Count",
                       cardInfoColor: "info",
                       value: e,
-                      cardIconContent: o.a.createElement(ea.a, null),
-                      gridItemSizes: { xs: 12, sm: 3, md: 6 },
+                      cardIconContent: o.a.createElement(ta.a, null),
+                      gridItemSizes: { xs: 12, sm: 3, md: 4 },
                       footerTitle: a,
                     },
                   });
@@ -3066,13 +3093,13 @@
                     "div",
                     null,
                     o.a.createElement(
-                      na,
+                      pa,
                       null,
-                      o.a.createElement(Wa, {
+                      o.a.createElement(Ua, {
                         cardValue: this.state.deviceCount,
                         classes: e,
                       }),
-                      o.a.createElement(Wa, {
+                      o.a.createElement(Ua, {
                         cardValue: this.state.triggerCount,
                         classes: e,
                       })
@@ -3084,8 +3111,8 @@
             t
           );
         })(r.Component),
-        Ua = Object($e.a)(Pa)(La),
-        Ga = {
+        Ka = Object(ea.a)(Ga)(qa),
+        Va = {
           cardCategoryWhite: {
             "&,& a,& a:hover,& a:focus": {
               color: "rgba(255,255,255,.62)",
@@ -3112,22 +3139,22 @@
             },
           },
         },
-        qa = (function (e) {
-          Object(Je.a)(t, e);
+        Ya = (function (e) {
+          Object(Qe.a)(t, e);
           var a = Object(Xe.a)(t);
           function t(e) {
             var r;
             return (
-              Object(Qe.a)(this, t),
+              Object(Je.a)(this, t),
               ((r = a.call(this, e)).state = {
-                classes: Object(d.a)(Ga),
+                classes: Object(d.a)(Va),
                 deviceData: [],
                 groupedData: [],
                 tableData: {
                   Triggers: {
-                    title: "Triggers",
-                    subTitle: "List of times each device was triggered.",
-                    tableHeader: ["Time Triggered", "Device", "FMA", "FMZ"],
+                    title: "Fisherman Location Tracked",
+                    subTitle: "List of times we have the vessel location.",
+                    tableHeader: ["Time Tracked", "Vessel name", "FMA", "FMZ"],
                   },
                 },
               }),
@@ -3154,14 +3181,14 @@
                     var t = [];
                     e.state.deviceData
                       .sort(function (e, a) {
-                        return e.telemetry.date_proc - a.telemetry.date_proc;
+                        return a.telemetry.date_proc - e.telemetry.date_proc;
                       })
                       .forEach(function (e) {
                         "triggered" === e.telemetry.state &&
                           t.push([
                             e.telemetry.date_proc_str,
                             e.device.name,
-                            e.telemetry.datapoint.FMA,
+                            e.telemetry.datapoint.FMALocation,
                             e.telemetry.datapoint.FMZ,
                           ]);
                       }),
@@ -3178,19 +3205,18 @@
                 key: "render",
                 value: function () {
                   return (
-                    console.log("tableList render "),
                     this.state.deviceData.length > 0 && this.groupDeviceData(),
                     o.a.createElement(
-                      na,
+                      pa,
                       null,
                       o.a.createElement(
-                        ra,
+                        la,
                         { xs: 12, sm: 12, md: 12 },
                         o.a.createElement(
-                          va,
+                          ja,
                           null,
                           o.a.createElement(
-                            Ea,
+                            Fa,
                             { color: "primary" },
                             o.a.createElement(
                               "h4",
@@ -3207,9 +3233,9 @@
                             )
                           ),
                           o.a.createElement(
-                            ka,
+                            Aa,
                             null,
-                            o.a.createElement(ga, {
+                            o.a.createElement(ua, {
                               tableHeaderColor: "primary",
                               tableHead: (
                                 this.state.groupedData[0] || { header: [] }
@@ -3229,25 +3255,38 @@
             t
           );
         })(r.Component),
-        Ma = (t(135), t(220)),
-        Ka = t(221),
-        Va = t(212),
-        Ya = t(219),
-        Qa = function (e) {
+        Ja = (t(140), t(226)),
+        Za = t(227),
+        Qa = t(218),
+        Xa = t(225),
+        $a = t(108),
+        _a = t.n($a),
+        et = function (e) {
           var a = e.content,
-            t = e.position;
+            t = e.position,
+            r = e.icon;
           return o.a.createElement(
-            Va.a,
-            { position: t },
-            o.a.createElement(Ya.a, null, a)
+            Qa.a,
+            { position: t, icon: r },
+            o.a.createElement(
+              Xa.a,
+              null,
+              o.a.createElement("img", {
+                src: _a.a,
+                alt: "Boat by Fabi\xe1n Sanabria from the Noun Project",
+                width: "25%",
+                className: "classes.img",
+              }),
+              o.a.createElement("div", null, a)
+            )
           );
         },
-        Za = (function (e) {
-          Object(Je.a)(t, e);
+        at = (function (e) {
+          Object(Qe.a)(t, e);
           var a = Object(Xe.a)(t);
           function t() {
             var e;
-            Object(Qe.a)(this, t);
+            Object(Je.a)(this, t);
             for (var r = arguments.length, o = new Array(r), n = 0; n < r; n++)
               o[n] = arguments[n];
             return ((e = a.call.apply(a, [this].concat(o))).state = {}), e;
@@ -3259,8 +3298,8 @@
                 value: function () {
                   return this.props.markers.map(function (e) {
                     var a = e.key,
-                      t = Object(O.a)(e, ["key"]);
-                    return o.a.createElement(Qa, Object.assign({ key: a }, t));
+                      t = Object(k.a)(e, ["key"]);
+                    return o.a.createElement(et, Object.assign({ key: a }, t));
                   });
                 },
               },
@@ -3268,114 +3307,115 @@
             t
           );
         })(r.Component),
-        Ja =
-          (t(22),
-          (function (e) {
-            Object(Je.a)(t, e);
-            var a = Object(Xe.a)(t);
-            function t(e) {
-              var r;
-              return (
-                Object(Qe.a)(this, t),
-                ((r = a.call(this, e)).state = {
-                  deviceData: [],
-                  lat: 8.545379,
-                  lng: 124.566067,
-                  zoom: 13,
-                }),
-                fetch(
-                  "https://marine-protected-areas-v279620.et.r.appspot.com/dashboard/api/alldata"
-                )
-                  .then(function (e) {
-                    return e.json();
-                  })
-                  .then(function (e) {
-                    r.setState({ deviceData: e });
-                  })
-                  .catch(console.log),
-                console.log("tableList constructor"),
-                r
-              );
-            }
+        tt = t(22),
+        rt = new (t.n(tt).a.Icon)({ iconUrl: t(99), iconRetinaUrl: t(99) }),
+        ot = (function (e) {
+          Object(Qe.a)(t, e);
+          var a = Object(Xe.a)(t);
+          function t(e) {
+            var r;
             return (
-              Object(Ze.a)(t, [
-                {
-                  key: "plotMarkers",
-                  value: function () {
-                    var e = [];
-                    return (
-                      this.state.deviceData.forEach(function (a) {
-                        var t = a.telemetry.datapoint.geopoint[0],
-                          r = a.telemetry.datapoint.geopoint[1],
-                          o =
-                            a.device.name +
-                            " was " +
-                            a.telemetry.state +
-                            " " +
-                            a.telemetry.date_proc_str,
-                          n = a.telemetry.date_proc;
-                        e.push({
-                          key: n.toString(),
-                          content: o,
-                          position: [t, r],
-                        });
-                      }),
-                      e
-                    );
-                  },
-                },
-                {
-                  key: "render",
-                  value: function () {
-                    var e = [];
-                    this.state.deviceData.length > 0 &&
-                      (e = this.plotMarkers());
-                    var a = [this.state.lat, this.state.lng];
-                    return o.a.createElement(
-                      Ma.a,
-                      {
-                        center: a,
-                        zoom: this.state.zoom,
-                        className: "Leaflet-map-container",
-                      },
-                      o.a.createElement(Ka.a, {
-                        attribution:
-                          '&copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
-                        url:
-                          "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
-                      }),
-                      o.a.createElement(Za, { markers: e })
-                    );
-                  },
-                },
-              ]),
-              t
+              Object(Je.a)(this, t),
+              ((r = a.call(this, e)).state = {
+                deviceData: [],
+                lat: 8.545379,
+                lng: 124.566067,
+                zoom: 13,
+              }),
+              fetch(
+                "https://marine-protected-areas-v279620.et.r.appspot.com/dashboard/api/alldata"
+              )
+                .then(function (e) {
+                  return e.json();
+                })
+                .then(function (e) {
+                  r.setState({ deviceData: e });
+                })
+                .catch(console.log),
+              console.log("tableList constructor"),
+              r
             );
-          })(r.Component)),
-        Xa = [
+          }
+          return (
+            Object(Ze.a)(t, [
+              {
+                key: "plotMarkers",
+                value: function () {
+                  var e = [];
+                  return (
+                    this.state.deviceData.forEach(function (a) {
+                      var t = a.telemetry.datapoint.geopoint[0],
+                        r = a.telemetry.datapoint.geopoint[1],
+                        o =
+                          a.device.name +
+                          " was " +
+                          a.telemetry.state +
+                          " at " +
+                          a.telemetry.datapoint.FMALocation +
+                          " " +
+                          a.telemetry.date_proc_str,
+                        n = a.telemetry.date_proc;
+                      e.push({
+                        key: n.toString(),
+                        content: o,
+                        position: [t, r],
+                        icon: rt,
+                      });
+                    }),
+                    e
+                  );
+                },
+              },
+              {
+                key: "render",
+                value: function () {
+                  var e = [];
+                  this.state.deviceData.length > 0 && (e = this.plotMarkers());
+                  var a = [this.state.lat, this.state.lng];
+                  return o.a.createElement(
+                    Ja.a,
+                    {
+                      center: a,
+                      zoom: this.state.zoom,
+                      className: "Leaflet-map-container",
+                    },
+                    o.a.createElement(Za.a, {
+                      attribution:
+                        '&copy <a href="http://osm.org/copyright">OpenStreetMap</a> contributors',
+                      url: "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                    }),
+                    o.a.createElement(at, { markers: e })
+                  );
+                },
+              },
+            ]),
+            t
+          );
+        })(r.Component),
+        nt = [
           {
             path: "/dashboard",
             name: "Dashboard",
             icon: je.a,
-            component: Ua,
+            component: Ka,
             layout: "/parrotfishnet-karagathon-bucket/dashboard/admin",
           },
           {
             path: "/table",
-            name: "Table List",
+            name: "Fisherman Location Tracking",
             icon: "content_paste",
-            component: qa,
+            component: Ya,
             layout: "/parrotfishnet-karagathon-bucket/dashboard/admin",
           },
           {
             path: "/maps",
             name: "Maps",
             icon: Ye.a,
-            component: Ja,
+            component: ot,
             layout: "/parrotfishnet-karagathon-bucket/dashboard/admin",
           },
         ],
-        $a = function (e) {
+        it = function (e) {
           var a;
           return {
             wrapper: { position: "relative", top: "0", height: "100vh" },
@@ -3399,18 +3439,18 @@
               padding: "30px 15px",
               minHeight: "calc(100vh - 123px)",
             },
-            container: S,
+            container: A,
             map: { marginTop: "70px" },
           };
         },
-        _a = t(106),
-        et = t.n(_a),
-        at = t(107),
-        tt = t.n(at),
-        rt = o.a.createElement(
+        lt = t(110),
+        ct = t.n(lt),
+        pt = t(111),
+        st = t.n(pt),
+        dt = o.a.createElement(
           c.d,
           null,
-          Xa.map(function (e, a) {
+          nt.map(function (e, a) {
             return "/parrotfishnet-karagathon-bucket/dashboard/admin" ===
               e.layout
               ? o.a.createElement(c.b, {
@@ -3425,13 +3465,13 @@
             to: "/parrotfishnet-karagathon-bucket/dashboard/admin/dashboard",
           })
         ),
-        ot = Object(d.a)($a);
-      t(136);
-      var nt = Object(l.a)();
+        mt = Object(d.a)(it);
+      t(141);
+      var gt = Object(l.a)();
       i.a.render(
         o.a.createElement(
           c.c,
-          { history: nt },
+          { history: gt },
           o.a.createElement(
             c.d,
             null,
@@ -3439,9 +3479,9 @@
               path: "/parrotfishnet-karagathon-bucket/dashboard/admin",
               component: function (e) {
                 var a = Object.assign({}, e),
-                  t = ot(),
+                  t = mt(),
                   r = o.a.createRef(),
-                  n = o.a.useState(et.a),
+                  n = o.a.useState(ct.a),
                   i = Object(p.a)(n, 2),
                   l = i[0],
                   c = (i[1], o.a.useState("blue")),
@@ -3455,13 +3495,13 @@
                   f = b[1],
                   v = o.a.useState([]),
                   w = Object(p.a)(v, 2),
-                  O =
+                  k =
                     (w[0],
                     w[1],
                     function () {
                       f(!u);
                     }),
-                  k = function () {
+                  O = function () {
                     return (
                       "/parrotfishnet-karagathon-bucket/dashboard/admin/maps" !==
                       window.location.pathname
@@ -3475,7 +3515,7 @@
                     function () {
                       return (
                         navigator.platform.indexOf("Win") > -1 &&
-                          ((Ra = new s.a(r.current, {
+                          ((Wa = new s.a(r.current, {
                             suppressScrollX: !0,
                             suppressScrollY: !1,
                           })),
@@ -3483,7 +3523,7 @@
                         window.addEventListener("resize", j),
                         function () {
                           navigator.platform.indexOf("Win") > -1 &&
-                            Ra.destroy(),
+                            Wa.destroy(),
                             window.removeEventListener("resize", j);
                         }
                       );
@@ -3497,11 +3537,11 @@
                       Ke,
                       Object.assign(
                         {
-                          routes: Xa,
+                          routes: nt,
                           logoText: "ParrotFishnet",
-                          logo: tt.a,
+                          logo: st.a,
                           image: l,
-                          handleDrawerToggle: O,
+                          handleDrawerToggle: k,
                           open: u,
                           color: m,
                         },
@@ -3513,20 +3553,20 @@
                       { className: t.mainPanel, ref: r },
                       o.a.createElement(
                         ae,
-                        Object.assign({ routes: Xa, handleDrawerToggle: O }, a)
+                        Object.assign({ routes: nt, handleDrawerToggle: k }, a)
                       ),
-                      k()
+                      O()
                         ? o.a.createElement(
                             "div",
                             { className: t.content },
                             o.a.createElement(
                               "div",
                               { className: t.container },
-                              rt
+                              dt
                             )
                           )
-                        : o.a.createElement("div", { className: t.map }, rt),
-                      k() ? o.a.createElement(ie, null) : null
+                        : o.a.createElement("div", { className: t.map }, dt),
+                      O() ? o.a.createElement(ie, null) : null
                     )
                   )
                 );
@@ -3541,7 +3581,11 @@
         document.getElementById("root")
       );
     },
+    99: function (e, a) {
+      e.exports =
+        "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAANtSURBVEhLtVZbSFRRFN2OloxNWmn4SMUsa8wpM50io9eH01cFQhCCREX2ohcUUkZRZA+ooKCooKI+JAiCCqKsKIK0MLOpIM2oyMdoqZAak6VDa905x2bKZLJcsObse++Zveaefc7aEyR9IO9WEwczGAvaQQc4E0wAed8N1oHlYClYAbpAd8mCGAz++JOIFcNChqCt59vXkJZXlfKluU46QUt0goRFxUlkaqYMMQ/rxpyXYAl4HSLVGP3gJ4LkJgxzwO3g3M8fakOd54ulseKeeL53cYofTENCJTo9W6auKJKR42yccB88CD6AmIdziF4RJbAI3AlmVl85I8/OFfeZ/FcEmYJlyrJCSV2yTkzBIZW4tQ+8poV8ReZhOOxua854eGCt6ePzMu8DBXNUrEROSBdL3Fhpr3sjrVi+rvY29dSLSOs0mbX9lMcSk1iFy60Q4ZtJkCoya3AMdNzZliu+AjEZs2X65iOCL6o7P9HR8E4qT++Sxse31R2vUM7Ra3wjbohNYHXw5Pyt3C354HIsUcibGxcRepdgWsEesW84JEMtEca9XxEaPlKS5ufKUIyfXjwST/d3cbe4sBksMjrNHo8pDWAV68BtmsciswYaGat2izW3QF31j4mLV0rW+v3qSsR54ZAwH0LuzliK8BzYuIt0kblEgQpoJDuWStyMHCNmHuYDbKCdIg6eA25TDdZgIMhcvVdFYmx75kXooEg2D5p+C+6ivoocCIaPGYs6jTJi5mNeIJsi8TzJGtym/wK6gIbKG08RM61CIzwhRUUDw/C4JBWJYUGAmSJu+pBGe12tigaGjsb3KhLD4wA3RerDUAeN1tdOFQ0MdAIN9ePrKVI22jbDMDuCh6mz6YMR/y3oANpqmE/Vp4wipbRruqnGk5NFKvo70GI0mE+1gVKKsOG8pF3TSgh6Uc3Vs0YcKN6WXur1MOZhPoB9poIi7Ggl7AfwMT4w4ITF8IuBgPOenNihrkTS8jbr/sJG5qJB8pW4kNaoSfbxrsr7Rl1odvXlN6W11ilRqVl9miRrUH54o7y6fNKYT4xITpPswhN4G9NdXB4Hm37rJyg6+skaU2v1U+8DhUD6CQXYTyISU/z7CT8I387o6enOrEFnpJsG2hm5RLa8Lf13RkIJDV6P9wXEBu/fioZqyf/pf5fID4IshkSCAuaPAAAAAElFTkSuQmCC";
+    },
   },
-  [[121, 1, 2]],
+  [[125, 1, 2]],
 ]);
-//# sourceMappingURL=main.7d549b13.chunk.js.map
+//# sourceMappingURL=main.fafba0a5.chunk.js.map

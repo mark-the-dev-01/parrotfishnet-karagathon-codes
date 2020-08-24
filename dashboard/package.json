@@ -43,7 +43,7 @@
   "bugs": {
     "url": "https://github.com/creativetimofficial/material-dashboard-react/issues"
   },
-  "homepage": "/",
+  "homepage": "/parrotfishnet-karagathon-bucket/dashboard/",
   "website": "https://creativetimofficial.github.io/material-dashboard-react/",
   "optionalDependencies": {
     "@types/googlemaps": "3.39.6",
