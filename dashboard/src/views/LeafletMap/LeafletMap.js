@@ -7,12 +7,12 @@ import {
   Marker,
   LayerGroup,
   Popup,
+  Polyline,
 } from "react-leaflet";
-import MarkerList from "../../components/MarkerList/MarkerList.js";
 import { iconDot } from "components/Icons/Dot/Dot.js";
-import GroupedMarkersList from "components/GroupedMarkersList/GroupedMarkersList.js";
 import logo from "assets/img/noun_Boat_154463.png";
 import _ from "lodash";
+import L from "leaflet";
 
 const { Overlay } = LayersControl;
 
@@ -21,7 +21,7 @@ export default class LeafletMap extends Component {
     deviceData: [],
     lat: 8.545379,
     lng: 124.566067,
-    zoom: 13,
+    zoom: 17,
   };
 
   constructor(props) {
@@ -71,11 +71,20 @@ export default class LeafletMap extends Component {
     const groups = _.groupBy(this.state.deviceData, "device.identifier");
     for (const k in groups) {
       if (groups.hasOwnProperty(k)) {
+        let positions = groups[k].map((m) => m.telemetry.datapoint.geopoint);
+        console.log("groupMarkers()", groups[k]);
+
         list.push({
           index: i,
           key: groups[k][0].device.name,
           markerArray: groups[k],
           markerList: this.popupMarker(groups[k]),
+          positions: positions,
+          polylineOptions: {
+            color: "blue",
+            weight: 6,
+            opacity: 0.9,
+          },
         });
         i++;
       }
@@ -85,6 +94,10 @@ export default class LeafletMap extends Component {
       <Overlay key={"overlay-" + marker.index} name={marker.key}>
         <LayerGroup key={"layer-group-" + marker.index}>
           {marker.markerList}
+          <Polyline
+            positions={marker.positions}
+            options={marker.polylineOptions}
+          ></Polyline>
         </LayerGroup>
       </Overlay>
     ));
@@ -122,6 +135,28 @@ export default class LeafletMap extends Component {
   render() {
     console.log(this.state.deviceData);
 
+    // const arrow = [
+    //   {
+    //     offset: "100%",
+    //     repeat: 0,
+    //     symbol: L.Symbol.arrowHead({
+    //       pixelSize: 15,
+    //       polygon: false,
+    //       pathOptions: { stroke: true },
+    //     }),
+    //   },
+    // ];
+    // const polyline = [
+    //   [8.54569, 124.56664],
+    //   [8.54589, 124.56626],
+    //   [8.54579, 124.567],
+    //   [8.54579, 124.567],
+    //   [8.54547, 124.56679],
+    //   [8.54569, 124.56664],
+    //   [8.54547, 124.56679],
+    //   [8.54589, 124.56626],
+    // ];
+
     let plottedMarkers = [];
     let groupedMarkers = null;
     if (this.state.deviceData.length > 0) {
@@ -142,6 +177,7 @@ export default class LeafletMap extends Component {
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           />
           {groupedMarkers}
+          {/* <PolylineDecorator patterns={arrow} positions={polyline} /> */}
         </LayersControl>
       </Map>
     );
