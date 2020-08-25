@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { Marker, Popup } from "react-leaflet";
 import logo from "assets/img/noun_Boat_154463.png";
+import _ from "lodash";
+import { iconDot } from "components/Icons/Dot/Dot.js";
 
 const PopupMarker = ({ content, position, icon }) => (
   <Marker position={position} icon={icon}>
@@ -8,7 +10,6 @@ const PopupMarker = ({ content, position, icon }) => (
       <img
         src={logo}
         alt="Boat by Fabián Sanabria from the Noun Project"
-        width="25%"
         className="classes.img"
       />
       <div>{content}</div>
@@ -20,8 +21,20 @@ export default class MarkerList extends Component {
   state = {};
 
   render() {
-    return this.props.markers.map(({ key, ...props }) => (
-      <PopupMarker key={key} {...props}></PopupMarker>
+    console.log(this.props.markers);
+    this.props.markers.forEach((element) => {
+      element.content = "content";
+      element.position = element.telemetry.datapoint.geopoint;
+      element.icon = iconDot;
+    });
+
+    return this.props.markers.map((id, content, position, icon) => (
+      <PopupMarker
+        key={id.id}
+        content={content}
+        position={position}
+        icon={icon}
+      ></PopupMarker>
     ));
   }
 }
