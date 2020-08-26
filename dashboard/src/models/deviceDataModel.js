@@ -1,7 +1,7 @@
 let deviceData = [];
 
 fetch(
-  "https://20200825t225841-dot-marine-protected-areas-v279620.et.r.appspot.com/dashboard/api/alldata"
+  "https://marine-protected-areas-v279620.et.r.appspot.com/dashboard/api/alldata"
 )
   .then((res) => res.json())
   .then((data) => {

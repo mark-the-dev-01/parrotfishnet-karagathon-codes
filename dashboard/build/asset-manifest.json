@@ -1,28 +1,28 @@
 {
   "files": {
     "main.css": "/parrotfishnet-karagathon-bucket/dashboard/static/css/main.c081f08d.chunk.css",
-    "main.js": "/parrotfishnet-karagathon-bucket/dashboard/static/js/main.fafba0a5.chunk.js",
-    "main.js.map": "/parrotfishnet-karagathon-bucket/dashboard/static/js/main.fafba0a5.chunk.js.map",
+    "main.js": "/parrotfishnet-karagathon-bucket/dashboard/static/js/main.f4691da9.chunk.js",
+    "main.js.map": "/parrotfishnet-karagathon-bucket/dashboard/static/js/main.f4691da9.chunk.js.map",
     "runtime-main.js": "/parrotfishnet-karagathon-bucket/dashboard/static/js/runtime-main.6d354910.js",
     "runtime-main.js.map": "/parrotfishnet-karagathon-bucket/dashboard/static/js/runtime-main.6d354910.js.map",
     "static/css/2.d0176e96.chunk.css": "/parrotfishnet-karagathon-bucket/dashboard/static/css/2.d0176e96.chunk.css",
-    "static/js/2.145d5a8b.chunk.js": "/parrotfishnet-karagathon-bucket/dashboard/static/js/2.145d5a8b.chunk.js",
-    "static/js/2.145d5a8b.chunk.js.map": "/parrotfishnet-karagathon-bucket/dashboard/static/js/2.145d5a8b.chunk.js.map",
+    "static/js/2.ef621bfb.chunk.js": "/parrotfishnet-karagathon-bucket/dashboard/static/js/2.ef621bfb.chunk.js",
+    "static/js/2.ef621bfb.chunk.js.map": "/parrotfishnet-karagathon-bucket/dashboard/static/js/2.ef621bfb.chunk.js.map",
     "index.html": "/parrotfishnet-karagathon-bucket/dashboard/index.html",
-    "precache-manifest.00deebb9e56fe58e0a03ae21a8db027a.js": "/parrotfishnet-karagathon-bucket/dashboard/precache-manifest.00deebb9e56fe58e0a03ae21a8db027a.js",
+    "precache-manifest.a04cfb7af69ce82adc276f456e337aa9.js": "/parrotfishnet-karagathon-bucket/dashboard/precache-manifest.a04cfb7af69ce82adc276f456e337aa9.js",
     "service-worker.js": "/parrotfishnet-karagathon-bucket/dashboard/service-worker.js",
     "static/css/2.d0176e96.chunk.css.map": "/parrotfishnet-karagathon-bucket/dashboard/static/css/2.d0176e96.chunk.css.map",
     "static/css/main.c081f08d.chunk.css.map": "/parrotfishnet-karagathon-bucket/dashboard/static/css/main.c081f08d.chunk.css.map",
-    "static/js/2.145d5a8b.chunk.js.LICENSE.txt": "/parrotfishnet-karagathon-bucket/dashboard/static/js/2.145d5a8b.chunk.js.LICENSE.txt",
-    "static/js/main.fafba0a5.chunk.js.LICENSE.txt": "/parrotfishnet-karagathon-bucket/dashboard/static/js/main.fafba0a5.chunk.js.LICENSE.txt",
+    "static/js/2.ef621bfb.chunk.js.LICENSE.txt": "/parrotfishnet-karagathon-bucket/dashboard/static/js/2.ef621bfb.chunk.js.LICENSE.txt",
+    "static/js/main.f4691da9.chunk.js.LICENSE.txt": "/parrotfishnet-karagathon-bucket/dashboard/static/js/main.f4691da9.chunk.js.LICENSE.txt",
     "static/media/noun_Boat_154463.png": "/parrotfishnet-karagathon-bucket/dashboard/static/media/noun_Boat_154463.3dcfe587.png",
     "static/media/sidebar-2.jpg": "/parrotfishnet-karagathon-bucket/dashboard/static/media/sidebar-2.310509c9.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.6d354910.js",
     "static/css/2.d0176e96.chunk.css",
-    "static/js/2.145d5a8b.chunk.js",
+    "static/js/2.ef621bfb.chunk.js",
     "static/css/main.c081f08d.chunk.css",
-    "static/js/main.fafba0a5.chunk.js"
+    "static/js/main.f4691da9.chunk.js"
   ]
 }
