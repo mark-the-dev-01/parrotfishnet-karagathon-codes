@@ -12,36 +12,51 @@ import {
 import { iconDot } from "components/Icons/Dot/Dot.js";
 import logo from "assets/img/noun_Boat_154463.png";
 import _ from "lodash";
-import L from "leaflet";
 
 const { Overlay } = LayersControl;
 
 export default class LeafletMap extends Component {
   state = {
     deviceData: [],
+    fishermenData: [],
     lat: 8.545379,
     lng: 124.566067,
-    zoom: 17,
+    zoom: 15,
   };
 
   constructor(props) {
     super(props);
 
     fetch(
-      "https://marine-protected-areas-v279620.et.r.appspot.com/dashboard/api/alldata"
+      "https://20200825t225841-dot-marine-protected-areas-v279620.et.r.appspot.com/dashboard/api/alldata"
     )
       .then((res) => res.json())
       .then((data) => {
         this.setState({ deviceData: data });
       })
       .catch(console.log);
-    console.log("tableList constructor");
+
+    fetch(
+      "https://20200825t225841-dot-marine-protected-areas-v279620.et.r.appspot.com/dashboard/api/allfishermen"
+    )
+      .then((res) => res.json())
+      .then((data) => {
+        this.setState({ fishermenData: data });
+      })
+      .catch(console.log);
   }
 
   plotMarkers() {
     let markers = [];
 
     this.state.deviceData.forEach((device) => {
+      let fishermen = this.state.fishermenData.filter(
+        (f) => f.identifier == device.device.identifier
+      );
+      if (fishermen != undefined || fishermen != null) {
+        fishermen = fishermen[0];
+      }
+
       const lat = device.telemetry.datapoint.geopoint[0];
       const lng = device.telemetry.datapoint.geopoint[1];
       const popupMessage =
@@ -72,7 +87,6 @@ export default class LeafletMap extends Component {
     for (const k in groups) {
       if (groups.hasOwnProperty(k)) {
         let positions = groups[k].map((m) => m.telemetry.datapoint.geopoint);
-        console.log("groupMarkers()", groups[k]);
 
         list.push({
           index: i,
@@ -81,7 +95,7 @@ export default class LeafletMap extends Component {
           markerList: this.popupMarker(groups[k]),
           positions: positions,
           polylineOptions: {
-            color: "blue",
+            color: "red",
             weight: 6,
             opacity: 0.9,
           },
@@ -91,7 +105,7 @@ export default class LeafletMap extends Component {
     }
 
     return list.map((marker) => (
-      <Overlay key={"overlay-" + marker.index} name={marker.key}>
+      <Overlay key={"overlay-" + marker.index} name={marker.key} checked>
         <LayerGroup key={"layer-group-" + marker.index}>
           {marker.markerList}
           <Polyline
@@ -105,6 +119,14 @@ export default class LeafletMap extends Component {
 
   popupMarker(markers) {
     markers.forEach((element) => {
+      let fishermen = this.state.fishermenData.filter(
+        (f) => f.identifier == element.device.identifier
+      );
+      if (fishermen != undefined || fishermen != null) {
+        fishermen = fishermen[0];
+      }
+
+      element.fisherman_data = fishermen;
       element.content =
         element.device.name +
         " was " +
@@ -117,46 +139,45 @@ export default class LeafletMap extends Component {
       element.icon = iconDot;
     });
 
+    console.log(markers);
+
     return markers.map((marker) => (
       <Marker key={marker.id} position={marker.position} icon={marker.icon}>
         <Popup>
           <img
             src={logo}
             alt="Boat by Fabián Sanabria from the Noun Project"
-            width="100%"
+            width="50%"
             className="classes.img"
           />
-          <div>{marker.content}</div>
+          <div>
+            <p>
+              <b>Name: </b>
+              {(marker.fisherman_data || { owner: "" }).owner}
+            </p>
+            <p>
+              <b>Address: </b>
+              {(marker.fisherman_data || { address: "" }).address}
+            </p>
+            <p>
+              <b>Contact Number: </b>
+              {(marker.fisherman_data || { contact_number: "" }).contact_number}
+            </p>
+            <p>
+              <b>Family Number: </b>
+              {(marker.fisherman_data || { familiy_number: "" }).familiy_number}
+            </p>
+            <p>
+              <b>Location: </b>
+              {marker.telemetry.datapoint.geopoint.join()}
+            </p>
+          </div>
         </Popup>
       </Marker>
     ));
   }
 
   render() {
-    console.log(this.state.deviceData);
-
-    // const arrow = [
-    //   {
-    //     offset: "100%",
-    //     repeat: 0,
-    //     symbol: L.Symbol.arrowHead({
-    //       pixelSize: 15,
-    //       polygon: false,
-    //       pathOptions: { stroke: true },
-    //     }),
-    //   },
-    // ];
-    // const polyline = [
-    //   [8.54569, 124.56664],
-    //   [8.54589, 124.56626],
-    //   [8.54579, 124.567],
-    //   [8.54579, 124.567],
-    //   [8.54547, 124.56679],
-    //   [8.54569, 124.56664],
-    //   [8.54547, 124.56679],
-    //   [8.54589, 124.56626],
-    // ];
-
     let plottedMarkers = [];
     let groupedMarkers = null;
     if (this.state.deviceData.length > 0) {
@@ -177,7 +198,6 @@ export default class LeafletMap extends Component {
             url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
           />
           {groupedMarkers}
-          {/* <PolylineDecorator patterns={arrow} positions={polyline} /> */}
         </LayersControl>
       </Map>
     );

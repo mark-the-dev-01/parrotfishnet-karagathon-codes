@@ -2999,7 +2999,7 @@
                 triggerCount: Ma,
               }),
               fetch(
-                "https://marine-protected-areas-v279620.et.r.appspot.com/dashboard/api/alldata"
+                "https://20200825t225841-dot-marine-protected-areas-v279620.et.r.appspot.com/dashboard/api/alldata"
               )
                 .then(function (e) {
                   return e.json();
@@ -3159,7 +3159,7 @@
                 },
               }),
               fetch(
-                "https://marine-protected-areas-v279620.et.r.appspot.com/dashboard/api/alldata"
+                "https://20200825t225841-dot-marine-protected-areas-v279620.et.r.appspot.com/dashboard/api/alldata"
               )
                 .then(function (e) {
                   return e.json();
@@ -3323,7 +3323,7 @@
                 zoom: 13,
               }),
               fetch(
-                "https://marine-protected-areas-v279620.et.r.appspot.com/dashboard/api/alldata"
+                "https://20200825t225841-dot-marine-protected-areas-v279620.et.r.appspot.com/dashboard/api/alldata"
               )
                 .then(function (e) {
                   return e.json();
