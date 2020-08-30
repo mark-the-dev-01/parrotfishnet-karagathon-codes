@@ -43,12 +43,19 @@ export default class TableList extends Component {
   state = {
     classes: makeStyles(styles),
     deviceData: [],
+    fishermenData: [],
     groupedData: [],
     tableData: {
       Triggers: {
         title: "Fisherman Location Tracked",
         subTitle: "List of times we have the vessel location.",
-        tableHeader: ["Time Tracked", "Vessel name", "FMA", "FMZ"],
+        tableHeader: [
+          "Time Tracked",
+          "Vessel name",
+          "Fisherman/Owner",
+          "FMA",
+          "FMZ",
+        ],
       },
     },
   };
@@ -57,11 +64,20 @@ export default class TableList extends Component {
     super(props);
 
     fetch(
-      "https://20200827t003648-dot-marine-protected-areas-v279620.et.r.appspot.com/dashboard/api/alldata"
+      "https://marine-protected-areas-v279620.et.r.appspot.com/dashboard/api/alldata"
     )
       .then((res) => res.json())
       .then((data) => {
         this.setState({ deviceData: data });
+      })
+      .catch(console.log);
+
+    fetch(
+      "https://marine-protected-areas-v279620.et.r.appspot.com/dashboard/api/allfishermen"
+    )
+      .then((res) => res.json())
+      .then((data) => {
+        this.setState({ fishermenData: data });
       })
       .catch(console.log);
   }
@@ -75,9 +91,17 @@ export default class TableList extends Component {
             .sort((a, b) => b.telemetry.date_proc - a.telemetry.date_proc)
             .forEach((dev) => {
               if (dev.telemetry.state === "triggered") {
+                let fishermen = this.state.fishermenData.filter(
+                  (f) => f.identifier == dev.device.identifier
+                );
+                if (fishermen != undefined || fishermen != null) {
+                  fishermen = fishermen[0];
+                }
+
                 d.push([
                   dev.telemetry.date_proc_str,
                   dev.device.name,
+                  (fishermen || { owner: "" }).owner,
                   dev.telemetry.datapoint.FMALocation,
                   dev.telemetry.datapoint.FMZ,
                 ]);

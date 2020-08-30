@@ -64,7 +64,7 @@ class UploadData extends Component {
 
     axios
       .post(
-        "https://20200827t003648-dot-marine-protected-areas-v279620.et.r.appspot.com/dashboard/api/addmapdata",
+        "https://marine-protected-areas-v279620.et.r.appspot.com/dashboard/api/addmapdata",
         formData
       )
       .then(function (response) {
