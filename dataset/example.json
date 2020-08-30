@@ -1,0 +1,23 @@
+{
+  "date_added": "",
+  "device": {
+    "name": "",
+    "identifier": "",
+    "descriptor": "",
+    "type": "bouy"
+  },
+  "version": 0.1,
+  "telemetry": {
+    "date_proc": "5/5/2020",
+    "datapoint": {
+      "EEZ": "Philippines Exclusive Economic Zone",
+      "FMZ": "Region X",
+      "FMA": 9,
+      "lat": 21.11,
+      "lng": 22.0
+    },
+    "ais": {
+      "vesselType": "fishing"
+    }
+  }
+}
