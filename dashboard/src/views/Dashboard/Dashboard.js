@@ -66,59 +66,35 @@ const defaultGridItemCardValue = {
 class Dashboard extends Component {
   state = {
     deviceData: [],
-    fishermanData: [],
     deviceCount: defaultGridItemCardValue,
     triggerCount: defaultGridItemCardValue,
-    triggerPerVesselCount: defaultGridItemCardValue,
   };
 
   constructor(props) {
     super(props);
 
-    // fetch(
-    //   "https://marine-protected-areas-v279620.et.r.appspot.com/dashboard/api/alldata"
-    // )
-    //   .then((res) => res.json())
-    //   .then((data) => {
-    //     this.setState({ deviceData: data });
-    //   })
-    //   .then(() => {
-    //     // this.getVesselCount();
-    //     // this.getTriggeredCount();
-    //     // this.getTriggerPerVessel();
-    //   })
-    //   .catch(console.log);
+    fetch(
+      "https://marine-protected-areas-v279620.et.r.appspot.com/dashboard/api/alldata"
+    )
+      .then((res) => res.json())
+      .then((data) => {
+        this.setState({ deviceData: data });
+      })
+      .then(() => {
+        this.getVesselCount();
+        this.getTriggeredCount();
+        this.getTriggerByVessel();
+      })
+      .catch(console.log);
   }
 
-  getTriggerPerVessel() {
+  getTriggerByVessel() {
     const triggerData = _.filter(
       this.state.deviceData,
       (d) => d.telemetry.state === "triggered"
     );
     const vessels = _.uniqBy(triggerData, "device.identifier");
     const groupedByDevice = _.groupBy(triggerData, "device.identifier");
-
-    const devices = [];
-    for (const key in groupedByDevice) {
-      if (groupedByDevice.hasOwnProperty(key)) {
-        devices.push([key, "s", "x", "d"]);
-      }
-    }
-
-    this.setState({
-      triggerPerVesselCount: devices,
-    });
-
-    console.log(devices);
-
-    // groupedByDevice.forEach((element) => {
-    //   console.log(element[0]
-    //   devices.push([
-
-    //   ])
-    // });
-
-    // console.log(vessels, groupedByDevice);
   }
 
   getTriggeredCount() {
@@ -177,40 +153,6 @@ class Dashboard extends Component {
         footerTitle: footerTitle,
       },
     });
-  }
-
-  componentDidMount() {
-    const fetchDeviceData = async () => {
-      const deviceResponse = await fetch(
-        "https://marine-protected-areas-v279620.et.r.appspot.com/dashboard/api/alldata"
-      );
-      const deviceData = await deviceResponse.json();
-      this.setState({
-        deviceData: deviceData,
-      });
-      console.log(deviceData);
-    };
-
-    const fetchFishermenData = async () => {
-      const fishermenResponse = await fetch(
-        "https://marine-protected-areas-v279620.et.r.appspot.com/dashboard/api/allfishermen"
-      );
-      const fishermenData = await fishermenResponse.json();
-      this.setState({
-        fishermanData: fishermenData,
-      });
-      console.log(fishermenData);
-    };
-
-    fetchDeviceData()
-      .then(fetchFishermenData)
-      .then(() => {
-        this.getVesselCount();
-        this.getTriggeredCount();
-      })
-      .then(() => {
-        this.getTriggerPerVessel();
-      });
   }
 
   render() {
@@ -360,9 +302,8 @@ class Dashboard extends Component {
             </Card>
           </GridItem>
         </GridContainer> */}
-        <GridContainer>
-          <GridItem xs={12} sm={12} md={6}></GridItem>
-          {/* <GridItem xs={12} sm={12} md={6}>
+        {/* <GridContainer>
+          <GridItem xs={12} sm={12} md={6}>
             <CustomTabs
               title="Tasks:"
               headerColor="primary"
@@ -376,7 +317,7 @@ class Dashboard extends Component {
                       tasksIndexes={[0, 1, 2, 3]}
                       tasks={bugs}
                     />
-                  ),
+                  )
                 },
                 {
                   tabName: "Website",
@@ -387,7 +328,7 @@ class Dashboard extends Component {
                       tasksIndexes={[0, 1]}
                       tasks={website}
                     />
-                  ),
+                  )
                 },
                 {
                   tabName: "Server",
@@ -398,11 +339,11 @@ class Dashboard extends Component {
                       tasksIndexes={[0, 1, 2]}
                       tasks={server}
                     />
-                  ),
-                },
+                  )
+                }
               ]}
             />
-          </GridItem> */}
+          </GridItem>
           <GridItem xs={12} sm={12} md={6}>
             <Card>
               <CardHeader color="warning">
@@ -419,13 +360,13 @@ class Dashboard extends Component {
                     ["1", "Dakota Rice", "$36,738", "Niger"],
                     ["2", "Minerva Hooper", "$23,789", "Curaçao"],
                     ["3", "Sage Rodriguez", "$56,142", "Netherlands"],
-                    ["4", "Philip Chaney", "$38,735", "Korea, South"],
+                    ["4", "Philip Chaney", "$38,735", "Korea, South"]
                   ]}
                 />
               </CardBody>
             </Card>
           </GridItem>
-        </GridContainer>
+        </GridContainer> */}
       </div>
     );
   }
