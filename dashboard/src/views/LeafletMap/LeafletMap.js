@@ -28,7 +28,7 @@ export default class LeafletMap extends Component {
     super(props);
 
     fetch(
-      "https://marine-protected-areas-v279620.et.r.appspot.com/dashboard/api/alldata"
+      "https://20200827t003648-dot-marine-protected-areas-v279620.et.r.appspot.com/dashboard/api/alldata"
     )
       .then((res) => res.json())
       .then((data) => {
@@ -37,7 +37,7 @@ export default class LeafletMap extends Component {
       .catch(console.log);
 
     fetch(
-      "https://marine-protected-areas-v279620.et.r.appspot.com/dashboard/api/allfishermen"
+      "https://20200827t003648-dot-marine-protected-areas-v279620.et.r.appspot.com/dashboard/api/allfishermen"
     )
       .then((res) => res.json())
       .then((data) => {
@@ -151,6 +151,10 @@ export default class LeafletMap extends Component {
             className="classes.img"
           />
           <div>
+            <p>
+              <b>Time of point: </b>
+              {marker.telemetry.date_proc_str}
+            </p>
             <p>
               <b>Name: </b>
               {(marker.fisherman_data || { owner: "" }).owner}

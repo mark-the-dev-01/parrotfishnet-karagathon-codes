@@ -1,31 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "598efe281e1de1bd23dff9876d03020d",
+    "revision": "ab6b367a67d3b2a5979b2e0219dea3fc",
     "url": "/parrotfishnet-karagathon-bucket/dashboard/index.html"
   },
   {
-    "revision": "7e4ea9af68a8b5d59a01",
+    "revision": "0e31ff51853436bc49c7",
     "url": "/parrotfishnet-karagathon-bucket/dashboard/static/css/2.d0176e96.chunk.css"
   },
   {
-    "revision": "15fb86a652aa8d523930",
+    "revision": "417dfbdfbcb349ec1acf",
     "url": "/parrotfishnet-karagathon-bucket/dashboard/static/css/main.c081f08d.chunk.css"
   },
   {
-    "revision": "7e4ea9af68a8b5d59a01",
-    "url": "/parrotfishnet-karagathon-bucket/dashboard/static/js/2.ef621bfb.chunk.js"
+    "revision": "0e31ff51853436bc49c7",
+    "url": "/parrotfishnet-karagathon-bucket/dashboard/static/js/2.ccc46bf8.chunk.js"
   },
   {
     "revision": "15513183aa5c39c6fb452cfe3ac1f140",
-    "url": "/parrotfishnet-karagathon-bucket/dashboard/static/js/2.ef621bfb.chunk.js.LICENSE.txt"
+    "url": "/parrotfishnet-karagathon-bucket/dashboard/static/js/2.ccc46bf8.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "15fb86a652aa8d523930",
-    "url": "/parrotfishnet-karagathon-bucket/dashboard/static/js/main.f4691da9.chunk.js"
+    "revision": "417dfbdfbcb349ec1acf",
+    "url": "/parrotfishnet-karagathon-bucket/dashboard/static/js/main.28eeb1db.chunk.js"
   },
   {
     "revision": "f7bdf0cfc9ea0dd44285692948c2d84f",
-    "url": "/parrotfishnet-karagathon-bucket/dashboard/static/js/main.f4691da9.chunk.js.LICENSE.txt"
+    "url": "/parrotfishnet-karagathon-bucket/dashboard/static/js/main.28eeb1db.chunk.js.LICENSE.txt"
   },
   {
     "revision": "e6c47d696ed8dae8e369",

@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/parrotfishnet-karagathon-bucket/dashboard/precache-manifest.a04cfb7af69ce82adc276f456e337aa9.js"
+  "/parrotfishnet-karagathon-bucket/dashboard/precache-manifest.d466dba10fffa52ef6d7c6730d998284.js"
 );
 
 self.addEventListener('message', (event) => {

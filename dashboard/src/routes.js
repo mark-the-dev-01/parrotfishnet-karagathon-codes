@@ -21,6 +21,7 @@ import Dashboard from "@material-ui/icons/Dashboard";
 // import LibraryBooks from "@material-ui/icons/LibraryBooks";
 // import BubbleChart from "@material-ui/icons/BubbleChart";
 import LocationOn from "@material-ui/icons/LocationOn";
+import Update from "@material-ui/icons/Update";
 // import Notifications from "@material-ui/icons/Notifications";
 // import Unarchive from "@material-ui/icons/Unarchive";
 // import Language from "@material-ui/icons/Language";
@@ -34,6 +35,7 @@ import TableList from "views/TableList/TableList.js";
 // import NotificationsPage from "views/Notifications/Notifications.js";
 // import UpgradeToPro from "views/UpgradeToPro/UpgradeToPro.js";
 import LeafletMap from "views/LeafletMap/LeafletMap";
+import UploadData from "views/UploadData/UploadData";
 // core components/views for RTL layout
 // import RTLPage from "views/RTLPage/RTLPage.js";
 
@@ -110,6 +112,14 @@ const dashboardRoutes = [
   //   component: UpgradeToPro,
   //   layout: "/admin"
   // }
+  {
+    path: "/uploadData",
+    name: "Upload Data",
+    //    rtlName: "خرائط",
+    icon: Update,
+    component: UploadData,
+    layout: "/parrotfishnet-karagathon-bucket/dashboard/admin",
+  },
 ];
 
 export default dashboardRoutes;
