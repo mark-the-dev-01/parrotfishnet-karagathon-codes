@@ -1,7 +1,7 @@
 # parrotfishnet-karagathon-codes
 Repository for the entry of ParrotFishnet to the Karagathon Hackathon 2020
 
-ParrotFishnet is an IOT (Internet of Things) powered project dedicated to developing LORA  based sea networks for the monitoring of Marine environments in southern Philippines.We use micropython for iiot developemnent as well as web languages such as javascript, html,etc. This project is suppoerted by by Save Philippine Seas that aims to protect marine protected areas from threats such as poaching, dynamite, and illegal fishing. 
+ParrotFishnet is an IOT (Internet of Things) powered project dedicated to developing LORA  based sea networks for the monitoring of Marine environments in southern Philippines.We use micropython for IOT developemnent as well as web languages such as javascript, html,etc. This project is suppoerted by by Save Philippine Seas that aims to protect marine protected areas from threats such as poaching, dynamite, and illegal fishing. 
 
 We have partnered with Burias Shoal in El Salvador City, Misamis Oriental as our pilot.
 
